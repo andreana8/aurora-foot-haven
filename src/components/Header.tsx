@@ -12,12 +12,12 @@ const Header = () => {
           <a href="#asukoht" className="hover:text-foreground transition-colors">Asukoht</a>
           <a href="#kontakt" className="hover:text-foreground transition-colors">Kontakt</a>
         </nav>
-        <a
-          href="tel:+37258502300"
-          className="bg-secondary text-secondary-foreground px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-110 transition-all"
+        <button
+          onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+          className="bg-secondary text-secondary-foreground px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-110 transition-all cursor-pointer"
         >
           Broneeri Aeg
-        </a>
+        </button>
       </div>
     </header>
   );
