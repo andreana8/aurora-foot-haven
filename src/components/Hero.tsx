@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex-1 flex items-end pt-32 pb-8 px-4">
         <div className="container mx-auto flex items-end justify-between gap-8">
           <div className="flex flex-col gap-3">
-            <img src={logoFull} alt="Jalahooldus kogu perele" className="h-20 w-auto self-start" />
+            <img src={logoFull} alt="Jalahooldus kogu perele" className="h-32 md:h-40 w-auto self-start" />
             <h1 className="text-3xl md:text-4xl font-heading font-medium text-foreground tracking-tight leading-snug max-w-2xl">
               Jalgade Hooldus Tallinnas
             </h1>
