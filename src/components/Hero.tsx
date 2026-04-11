@@ -27,12 +27,12 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-muted-foreground font-medium mb-8 max-w-lg mx-auto">
           Aurora Medica Kliiniku Ruumides
         </p>
-        <a
-          href="#kontakt"
-          className="inline-block bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all"
+        <button
+          onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+          className="inline-block bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all cursor-pointer"
         >
           Broneeri Aeg
-        </a>
+        </button>
       </div>
     </section>
   );
