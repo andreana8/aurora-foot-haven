@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="container mx-auto flex items-end justify-between gap-8">
           <div className="flex flex-col gap-3">
             
-            <h1 className="text-4xl md:text-6xl font-heading font-medium text-foreground tracking-tight leading-snug max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground tracking-tight leading-snug max-w-2xl">
               Jalgade Hooldus Tallinnas
             </h1>
           </div>
