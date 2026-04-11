@@ -31,7 +31,7 @@ const Services = () => {
             Meie teenused
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Pakume professionaalset jalahooldust kõigile — lõõgastavast hoolitsusest keerulisemate probleemide lahendamiseni.
+            Pakume professionaalset jalahooldust kõigile. Lõõgastavast hoolitsusest keerulisemate probleemide lahendamiseni.
           </p>
         </div>
 
