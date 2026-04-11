@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
@@ -27,7 +28,9 @@ const Footer = () => {
           </div>
           <div className="text-sm">
             <p className="font-bold text-foreground mb-3 uppercase tracking-wider text-xs">Kasulikud teadmised</p>
-            <p className="text-muted-foreground">Kuidas hoida jalad terved ja ennetada probleeme.</p>
+            <Link to="/nouanded" className="text-muted-foreground hover:text-foreground transition-colors underline">
+              Kuidas hoida jalad terved ja ennetada probleeme
+            </Link>
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-border text-center text-sm text-muted-foreground">
