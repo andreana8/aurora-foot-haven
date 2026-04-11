@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-background/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <a href="#top">
-          <img src={logoFull} alt="Jalahooldus kogu perele" className="h-10 md:h-12 brightness-0 invert" />
+          <img src={logoFull} alt="Jalahooldus kogu perele" className="h-10 md:h-12" />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#teenused" className="hover:text-foreground transition-colors">Teenused</a>
