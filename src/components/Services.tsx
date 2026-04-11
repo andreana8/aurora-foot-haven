@@ -45,15 +45,9 @@ const Services = () => {
                 {card.title}
               </h3>
               <p className="text-3xl font-bold text-secondary mb-4">{card.price}</p>
-              <p className="text-muted-foreground leading-relaxed flex-1 mb-8 text-sm">
+              <p className="text-muted-foreground leading-relaxed flex-1 text-sm">
                 {card.description}
               </p>
-              <a
-                href="tel:+37258502300"
-                className="bg-secondary text-secondary-foreground text-center py-3 rounded-full font-bold hover:brightness-110 transition-all"
-              >
-                Broneeri Aeg
-              </a>
             </div>
           ))}
         </div>
