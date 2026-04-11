@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div className="flex items-center gap-3">
-            <img src={logoIcon} alt="Jalahooldus" className="w-10 h-10 brightness-0 invert" />
+            <img src={logoIcon} alt="Jalahooldus" className="w-10 h-10" />
             <div>
               <p className="font-bold text-foreground">Jalahooldus Kogu Perele</p>
               <p className="text-sm text-muted-foreground">Kadaka Trade Center, Kadaka tee 42B, Tallinn, 12919</p>
