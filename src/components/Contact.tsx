@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="w-16 h-px bg-foreground" />
         </div>
 
-        <div className="max-w-xl">
+        <div className="max-w-xl mx-auto text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
             Vajalik on eelbroneerimine
           </p>
