@@ -28,7 +28,7 @@ const Hero = () => {
           Aurora Medica Kliiniku Ruumides
         </p>
         <a
-          href="tel:+37258502300"
+          href="#kontakt"
           className="inline-block bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all"
         >
           Broneeri Aeg
