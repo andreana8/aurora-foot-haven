@@ -4,11 +4,11 @@ const Location = () => {
   return (
     <section id="asukoht" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="mb-20">
+        <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             Asukoht
           </h2>
-          <div className="w-16 h-px bg-foreground" />
+          <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
