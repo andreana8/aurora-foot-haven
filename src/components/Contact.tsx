@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="mt-8 pt-6 border-t border-border">
               <p className="font-semibold text-foreground mb-3">Leia meid ka Facebookist:</p>
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/JalahooldusKoguPerele"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-card text-foreground border border-border px-6 py-3 rounded-full font-bold hover:bg-accent transition-colors"
