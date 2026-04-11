@@ -35,7 +35,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.05] mb-4 tracking-tight">
               Jalgade hooldus
               <br />
-              <span className="text-primary">Tallinnas.</span>
+              <span className="text-primary">Tallinnas</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-medium mb-8 max-w-lg">
               Aurora Medica Kliiniku Ruumides
