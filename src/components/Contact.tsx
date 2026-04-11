@@ -23,7 +23,7 @@ const Contact = () => {
           <p className="text-muted-foreground text-sm mb-3">
             Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.
           </p>
-          <p className="text-foreground text-sm font-medium mb-8">Tasumine sularahas.</p>
+          <p className="text-foreground text-sm font-bold mb-8">Tasumine sularahas.</p>
           <div className="border-t border-border pt-6 text-xs text-muted-foreground max-w-md">
             <p>
               Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne
