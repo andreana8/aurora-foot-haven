@@ -2,11 +2,11 @@ const Contact = () => {
   return (
     <section id="kontakt" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="mb-20">
+        <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             Broneerimine
           </h2>
-          <div className="w-16 h-px bg-foreground" />
+          <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
         <div className="max-w-xl mx-auto text-center">
