@@ -39,19 +39,19 @@ const Hero = () => {
           </button>
           <button
             onClick={() => scrollTo('teenused')}
-            className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all cursor-pointer"
+            className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all cursor-pointer"
           >
             Teenused
           </button>
           <button
             onClick={() => scrollTo('asukoht')}
-            className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all cursor-pointer"
+            className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all cursor-pointer"
           >
             Asukoht
           </button>
           <button
             onClick={() => scrollTo('kontakt')}
-            className="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all cursor-pointer"
+            className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-bold hover:brightness-110 transition-all cursor-pointer"
           >
             Kontakt
           </button>
