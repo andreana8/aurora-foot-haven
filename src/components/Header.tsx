@@ -7,11 +7,6 @@ const Header = () => {
         <a href="#top">
           <img src={logoFull} alt="Jalahooldus kogu perele" className="h-10 md:h-12" />
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-          <a href="#teenused" className="hover:text-foreground transition-colors">Teenused</a>
-          <a href="#asukoht" className="hover:text-foreground transition-colors">Asukoht</a>
-          <a href="#kontakt" className="hover:text-foreground transition-colors">Kontakt</a>
-        </nav>
         <button
           onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
           className="bg-secondary text-secondary-foreground px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-110 transition-all cursor-pointer"
