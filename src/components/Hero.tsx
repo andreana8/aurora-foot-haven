@@ -35,19 +35,19 @@ const Hero = () => {
         <nav className="flex flex-wrap gap-3">
           <button
             onClick={() => document.getElementById("teenused")?.scrollIntoView({ behavior: "smooth" })}
-            className="border border-[#f8a13d] text-[#f8a13d] rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d] hover:text-background transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("services")}
           </button>
           <button
             onClick={() => document.getElementById("asukoht")?.scrollIntoView({ behavior: "smooth" })}
-            className="border border-[#f8a13d] text-[#f8a13d] rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d] hover:text-background transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("location")}
           </button>
           <button
             onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-            className="border border-[#f8a13d] text-[#f8a13d] rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d] hover:text-background transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 py-2 text-sm font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("contact")}
           </button>
