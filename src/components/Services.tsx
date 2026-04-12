@@ -1,6 +1,3 @@
-import clinicImg from "@/assets/clinic-room-new.png";
-import certificateImg from "@/assets/certificate-updated.png";
-import aparaatImg from "@/assets/aparaat-jalahooldus-new.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
