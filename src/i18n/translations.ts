@@ -26,6 +26,8 @@ export const translations = {
     // Location
     locationTitle: "Asukoht",
     locationDesc: "Asume Aurora Medica Kliinikus, 2. korrusel ruumis B1-217",
+    locationLine1: "Asume",
+    locationLine2: "Aurora Medica Kliinikus, 2. korrusel ruumis B1-217",
     address: "Aadress",
     addressValue: "Kadaka Trade Center, Kadaka tee 42B, Tallinn, 12919",
     entrance: "Sissepääs",
@@ -75,6 +77,8 @@ export const translations = {
 
     locationTitle: "Location",
     locationDesc: "We are located at Aurora Medica Clinic, 2nd floor, room B1-217",
+    locationLine1: "We are located at",
+    locationLine2: "Aurora Medica Clinic, 2nd floor, room B1-217",
     address: "Address",
     addressValue: "Kadaka Trade Center, Kadaka tee 42B, Tallinn, 12919",
     entrance: "Entrance",
@@ -121,6 +125,8 @@ export const translations = {
 
     locationTitle: "Местоположение",
     locationDesc: "Мы находимся в клинике Aurora Medica, 2-й этаж, кабинет B1-217",
+    locationLine1: "Мы находимся в",
+    locationLine2: "клинике Aurora Medica, 2-й этаж, кабинет B1-217",
     address: "Адрес",
     addressValue: "Kadaka Trade Center, Kadaka tee 42B, Таллинн, 12919",
     entrance: "Вход",
