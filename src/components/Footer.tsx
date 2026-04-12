@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground">
+        <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground text-center">
           © {t("footerName")}
         </div>
       </div>
