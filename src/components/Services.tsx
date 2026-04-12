@@ -76,6 +76,15 @@ const Services = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            to="/nouanded"
+            className="inline-block px-8 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-sm font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+          >
+            {t("footerAdvice")}
+          </Link>
+        </div>
       </div>
     </section>
   );
