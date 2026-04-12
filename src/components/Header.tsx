@@ -10,8 +10,8 @@ const Header = () => {
           onClick={() => setLanguage("et")}
           className={`px-3 py-1 text-xs font-medium rounded-full border transition-colors cursor-pointer ${
             language === "et"
-              ? "bg-foreground text-background border-foreground"
-              : "border-muted-foreground text-muted-foreground hover:border-foreground hover:text-foreground"
+              ? "bg-[#f8a13d] text-background border-[#f8a13d]"
+              : "border-[#f8a13d] text-[#f8a13d] hover:bg-[#f8a13d] hover:text-background"
           }`}
         >
           Eesti
@@ -20,8 +20,8 @@ const Header = () => {
           onClick={() => setLanguage("en")}
           className={`px-3 py-1 text-xs font-medium rounded-full border transition-colors cursor-pointer ${
             language === "en"
-              ? "bg-foreground text-background border-foreground"
-              : "border-muted-foreground text-muted-foreground hover:border-foreground hover:text-foreground"
+              ? "bg-[#f8a13d] text-background border-[#f8a13d]"
+              : "border-[#f8a13d] text-[#f8a13d] hover:bg-[#f8a13d] hover:text-background"
           }`}
         >
           English
@@ -30,8 +30,8 @@ const Header = () => {
           onClick={() => setLanguage("ru")}
           className={`px-3 py-1 text-xs font-medium rounded-full border transition-colors cursor-pointer ${
             language === "ru"
-              ? "bg-foreground text-background border-foreground"
-              : "border-muted-foreground text-muted-foreground hover:border-foreground hover:text-foreground"
+              ? "bg-[#f8a13d] text-background border-[#f8a13d]"
+              : "border-[#f8a13d] text-[#f8a13d] hover:bg-[#f8a13d] hover:text-background"
           }`}
         >
           Русский
