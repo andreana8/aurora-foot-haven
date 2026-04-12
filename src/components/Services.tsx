@@ -64,9 +64,15 @@ const Services = () => {
                   {card.price}
                 </span>
               </div>
-              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold">
+              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold mb-4">
                 {card.description}
               </p>
+              <Link
+                to="/nouanded"
+                className="inline-block mt-auto px-6 py-2 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full text-center"
+              >
+                Uuri lähemalt
+              </Link>
             </div>
           ))}
         </div>
