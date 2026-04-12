@@ -14,11 +14,16 @@ const Location = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="max-w-2xl mx-auto text-center space-y-6 mb-16">
-          <p className="text-lg text-foreground">
-            {t("locationDesc")}
-          </p>
-          <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+          <div className="text-left">
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+              {t("locationDesc").split(",")[0]}
+            </p>
+            <p className="text-lg text-foreground">
+              {t("locationDesc").substring(t("locationDesc").indexOf(",") + 1).trim()}
+            </p>
+          </div>
+          <div className="space-y-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("address")}</p>
               <p className="text-foreground">{t("addressValue")}</p>
