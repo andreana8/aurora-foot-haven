@@ -1,6 +1,3 @@
-import clinicImg from "@/assets/clinic-room-new.png";
-import certificateImg from "@/assets/certificate-updated.png";
-import aparaatImg from "@/assets/aparaat-jalahooldus-new.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -24,9 +21,9 @@ const Services = () => {
   }, []);
 
   const serviceCards = [
-    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc"), image: clinicImg, alt: t("clinicImgAlt") },
-    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc"), image: aparaatImg, alt: "professionaalne aparaat jalahooldus" },
-    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc"), image: certificateImg, alt: t("certImgAlt") },
+    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc") },
+    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc") },
+    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
   ];
 
   return (
@@ -58,24 +55,16 @@ const Services = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card, index) => (
-            <div key={card.title} className="bg-muted p-8 flex flex-col hover:shadow-lg transition-shadow py-[30px] px-[30px] my-0">
-              <div className="flex items-start justify-between gap-4 mb-6">
+            <div key={card.title} className="bg-muted p-6 flex flex-col hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between gap-4 mb-3">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
                   {card.title}
                 </h3>
-                <span className="text-muted-foreground whitespace-nowrap mt-2 font-extrabold text-2xl">
+                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-2xl">
                   {card.price}
                 </span>
               </div>
-              <div className="overflow-hidden aspect-[4/3] mb-6">
-                <img
-                  src={card.image}
-                  alt={card.alt}
-                  className="w-full h-full object-scale-down opacity-0 animate-fade-in"
-                  style={{ animationDelay: `${index * 200}ms`, animationFillMode: "forwards" }}
-                />
-              </div>
-              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0 mt-auto text-center text-sm font-semibold">
+              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold">
                 {card.description}
               </p>
             </div>
