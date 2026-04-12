@@ -14,7 +14,7 @@ const Location = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="text-center">
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
               {t("locationLine1")}
