@@ -1,5 +1,6 @@
 import clinicImg from "@/assets/clinic-room.jpg";
 import certificateImg from "@/assets/certificate.jpg";
+import aparaatImg from "@/assets/aparaat-jalahooldus.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
