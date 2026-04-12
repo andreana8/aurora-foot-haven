@@ -17,10 +17,10 @@ const Location = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div className="text-left">
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
-              {t("locationDesc").split(",")[0]}
+              {t("locationLine1")}
             </p>
             <p className="text-lg text-foreground">
-              {t("locationDesc").substring(t("locationDesc").indexOf(",") + 1).trim()}
+              {t("locationLine2")}
             </p>
           </div>
           <div className="space-y-6">
