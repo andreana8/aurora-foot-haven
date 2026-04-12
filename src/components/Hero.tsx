@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
         <img
           src={treatmentImg}
-          alt={t("heroImgAlt")}
+          alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
