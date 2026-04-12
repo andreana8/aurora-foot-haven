@@ -1,34 +1,22 @@
 import clinicImg from "@/assets/clinic-room.jpg";
 import certificateImg from "@/assets/certificate.jpg";
-
-const serviceCards = [
-  {
-    title: "Professionaalse aparaadiga jalahooldus",
-    price: "50 €",
-    description:
-      "Meie professionaalne jalahooldus hõlmab küünte korrastamist, küünenahkade töötlemist, taldade lihvimist ning jalgade niisutamist ja õlitamist. Hoolitsuse lõpetab turgutav massaaž.",
-  },
-  {
-    title: "Lõõgastav ja värskendav jalgade hooldus",
-    price: "60 €",
-    description:
-      "Hoolitsus algab lõõgastava jalavanniga, mis pehmendab ja värskendab sinu jalgu. Teenusesse kuulub küünte ja küünenahkade korrastamine, taldade lihvimine ning jalgade koorimine.",
-  },
-  {
-    title: "Probleemsete jalgade hooldus",
-    price: "70 €",
-    description:
-      "Töötleme nahapaksendid, paksenenud ja/või kahjustatud küüned, küüneseenest tingitud muutused, lõhenenud kannad, konnasilmad ja soolatüükad.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+
+  const serviceCards = [
+    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc") },
+    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc") },
+    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
+  ];
+
   return (
     <section id="teenused" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
-            Teenused
+            {t("servicesTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
@@ -49,10 +37,10 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 gap-4">
           <div className="overflow-hidden aspect-[4/3]">
-            <img src={clinicImg} alt="Meie kabinet" className="w-full h-full object-cover" />
+            <img src={clinicImg} alt={t("clinicImgAlt")} className="w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden aspect-[4/3]">
-            <img src={certificateImg} alt="Sertifikaat" className="w-full h-full object-cover" />
+            <img src={certificateImg} alt={t("certImgAlt")} className="w-full h-full object-cover" />
           </div>
         </div>
       </div>

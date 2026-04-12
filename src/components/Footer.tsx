@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 text-sm">
           <div>
-            <p className="font-medium text-foreground mb-1">Jalahooldus Kogu Perele</p>
+            <p className="font-medium text-foreground mb-1">{t("footerName")}</p>
             <p className="text-muted-foreground">Kadaka tee 42B, Tallinn</p>
           </div>
           <div>
@@ -19,12 +22,12 @@ const Footer = () => {
           </div>
           <div>
             <Link to="/nouanded" className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4">
-              Nõuanded tervete jalgade heaks
+              {t("footerAdvice")}
             </Link>
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground">
-          © Jalahooldus Kogu Perele
+          © {t("footerName")}
         </div>
       </div>
     </footer>
