@@ -4,7 +4,7 @@ const Header = () => {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto flex items-center justify-end py-3 px-4 gap-2">
         <button
           onClick={() => setLanguage("et")}
