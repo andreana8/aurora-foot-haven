@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 text-sm">
+        <div className="grid md:grid-cols-3 gap-8 text-sm text-center">
           <div>
             <p className="font-medium text-foreground mb-1">{t("footerName")}</p>
             <p className="text-muted-foreground">Kadaka tee 42B, Tallinn</p>
