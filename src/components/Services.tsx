@@ -57,7 +57,7 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {serviceCards.map((card) => (
+          {serviceCards.map((card, index) => (
             <div key={card.title} className="bg-muted p-8 flex flex-col hover:shadow-lg transition-shadow py-[30px] px-[30px] my-0">
               <div className="flex items-start justify-between gap-4 mb-6">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
@@ -68,7 +68,12 @@ const Services = () => {
                 </span>
               </div>
               <div className="overflow-hidden aspect-[4/3] mb-6">
-                <img src={card.image} alt={card.alt} className="w-full h-full object-scale-down" />
+                <img
+                  src={card.image}
+                  alt={card.alt}
+                  className="w-full h-full object-scale-down opacity-0 animate-fade-in"
+                  style={{ animationDelay: `${index * 200}ms`, animationFillMode: "forwards" }}
+                />
               </div>
               <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0 mt-auto text-center">
                 {card.description}
