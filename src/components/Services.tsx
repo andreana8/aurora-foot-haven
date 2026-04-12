@@ -1,5 +1,6 @@
 import clinicImg from "@/assets/clinic-room.jpg";
 import certificateImg from "@/assets/certificate.jpg";
+import aparaatImg from "@/assets/aparaat-jalahooldus.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
@@ -44,9 +45,12 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
           <div className="overflow-hidden aspect-[4/3]">
             <img src={clinicImg} alt={t("clinicImgAlt")} className="w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden aspect-[4/3]">
+            <img src={aparaatImg} alt="professionaalne aparaat jalahooldus" className="w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden aspect-[4/3]">
             <img src={certificateImg} alt={t("certImgAlt")} className="w-full h-full object-cover" />
