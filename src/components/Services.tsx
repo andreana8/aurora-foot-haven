@@ -21,14 +21,23 @@ const Services = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 mb-24">
+        <div className="grid md:grid-cols-3 gap-6 mb-24">
           {serviceCards.map((card) => (
-            <div key={card.title} className="flex flex-col">
-              <p className="text-2xl font-heading font-medium text-foreground mb-3">{card.price}</p>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
-                {card.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+            <div
+              key={card.title}
+              className="bg-muted p-8 flex flex-col justify-between min-h-[280px] hover:shadow-lg transition-shadow"
+            >
+              <div>
+                <div className="flex items-start justify-between gap-4 mb-6">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground leading-tight lowercase italic">
+                    {card.title}
+                  </h3>
+                  <span className="text-sm font-medium text-muted-foreground whitespace-nowrap mt-2">
+                    {card.price}
+                  </span>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider">
                 {card.description}
               </p>
             </div>
