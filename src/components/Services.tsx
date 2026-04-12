@@ -3,6 +3,7 @@ import certificateImg from "@/assets/certificate-updated.png";
 import aparaatImg from "@/assets/aparaat-jalahooldus-new.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -74,6 +75,15 @@ const Services = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            to="/nouanded"
+            className="inline-block px-8 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-sm font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+          >
+            {t("footerAdvice")}
+          </Link>
         </div>
       </div>
     </section>
