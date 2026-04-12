@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <section id="teenused" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="mb-20 text-center">
+        <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
           </h2>
@@ -25,19 +25,19 @@ const Services = () => {
           {serviceCards.map((card) => (
             <div
               key={card.title}
-              className="bg-muted p-8 flex flex-col justify-between min-h-[280px] hover:shadow-lg transition-shadow"
+              className="bg-muted p-8 flex flex-col justify-between min-h-[280px] hover:shadow-lg transition-shadow py-[30px] px-[30px] my-0 gap-[234px]"
             >
               <div>
                 <div className="flex items-start justify-between gap-4 mb-6">
                   <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
                     {card.title}
                   </h3>
-                  <span className="text-sm font-medium text-muted-foreground whitespace-nowrap mt-2">
+                  <span className="text-muted-foreground whitespace-nowrap mt-2 text-xl font-extrabold">
                     {card.price}
                   </span>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider">
+              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0">
                 {card.description}
               </p>
             </div>
