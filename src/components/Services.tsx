@@ -7,9 +7,9 @@ const Services = () => {
   const { t } = useLanguage();
 
   const serviceCards = [
-    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc") },
-    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc") },
-    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
+    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc"), image: clinicImg, alt: t("clinicImgAlt") },
+    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc"), image: aparaatImg, alt: "professionaalne aparaat jalahooldus" },
+    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc"), image: certificateImg, alt: t("certImgAlt") },
   ];
 
   return (
@@ -22,41 +22,29 @@ const Services = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-24">
+        <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card) => (
-            <div
-              key={card.title}
-              className="bg-muted p-8 flex flex-col justify-between min-h-[280px] hover:shadow-lg transition-shadow py-[30px] px-[30px] my-0 gap-[234px]"
-            >
-              <div>
-                <div className="flex items-start justify-between gap-4 mb-6">
-                  <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
-                    {card.title}
-                  </h3>
-                  <span className="text-muted-foreground whitespace-nowrap mt-2 text-xl font-extrabold">
-                    {card.price}
-                  </span>
+            <div key={card.title} className="flex flex-col gap-4">
+              <div className="bg-muted p-8 flex flex-col justify-between min-h-[280px] hover:shadow-lg transition-shadow py-[30px] px-[30px] my-0 gap-[234px]">
+                <div>
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
+                      {card.title}
+                    </h3>
+                    <span className="text-muted-foreground whitespace-nowrap mt-2 text-xl font-extrabold">
+                      {card.price}
+                    </span>
+                  </div>
                 </div>
+                <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0">
+                  {card.description}
+                </p>
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0">
-                {card.description}
-              </p>
+              <div className="overflow-hidden aspect-[4/3]">
+                <img src={card.image} alt={card.alt} className="w-full h-full object-cover" />
+              </div>
             </div>
           ))}
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="overflow-hidden aspect-[4/3]">
-            <img src={clinicImg} alt={t("clinicImgAlt")} className="w-full h-full object-cover" />
-          </div>
-          <div className="overflow-hidden aspect-[4/3]">
-            <img src={aparaatImg} alt="professionaalne aparaat jalahooldus" className="w-full h-full object-cover" />
-          </div>
-          <div className="overflow-hidden aspect-[4/3]">
-            <img src={certificateImg} alt={t("certImgAlt")} className="w-full h-full object-cover" />
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
