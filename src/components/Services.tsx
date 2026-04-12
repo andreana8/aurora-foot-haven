@@ -63,7 +63,7 @@ const Services = () => {
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
                   {card.title}
                 </h3>
-                <span className="text-muted-foreground whitespace-nowrap mt-2 text-xl font-extrabold">
+                <span className="text-muted-foreground whitespace-nowrap mt-2 font-extrabold text-2xl">
                   {card.price}
                 </span>
               </div>
@@ -75,7 +75,7 @@ const Services = () => {
                   style={{ animationDelay: `${index * 200}ms`, animationFillMode: "forwards" }}
                 />
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0 mt-auto text-center">
+              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0 mt-auto text-center text-sm font-semibold">
                 {card.description}
               </p>
             </div>
