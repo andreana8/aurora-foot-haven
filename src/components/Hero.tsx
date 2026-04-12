@@ -55,7 +55,7 @@ const Hero = () => {
       </div>
 
       {/* Scrolling marquee at the bottom */}
-      <div className="relative z-10 bg-foreground text-background py-3 overflow-hidden">
+      <div className="relative z-10 bg-[#02acbd] text-background py-3 overflow-hidden">
         <div className="animate-marquee flex whitespace-nowrap gap-8">
           {marqueeItems.concat(marqueeItems).map((item, i) => (
             <span key={i} className="text-sm font-semibold tracking-[0.2em] uppercase mx-4">
