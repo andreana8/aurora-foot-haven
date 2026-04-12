@@ -29,7 +29,7 @@ const Services = () => {
             >
               <div>
                 <div className="flex items-start justify-between gap-4 mb-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
+                  <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
                     {card.title}
                   </h3>
                   <span className="text-sm font-medium text-muted-foreground whitespace-nowrap mt-2">
