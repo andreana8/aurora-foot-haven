@@ -6,7 +6,19 @@ const Hero = () => {
 
   return (
     <section id="top" className="min-h-screen flex flex-col">
-      <div className="flex-1 flex items-end pt-32 pb-8 px-4">
+      {/* Full-width image at the top */}
+      <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">
+        <img
+          src={treatmentImg}
+          alt={t("heroImgAlt")}
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+        />
+      </div>
+
+      {/* Text and nav below the image */}
+      <div className="flex-1 flex items-start pt-12 pb-8 px-4">
         <div className="container mx-auto flex items-end justify-between gap-8">
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground tracking-tight leading-snug max-w-2xl whitespace-nowrap">
@@ -25,16 +37,6 @@ const Hero = () => {
             </button>
           </nav>
         </div>
-      </div>
-
-      <div className="w-full h-[50vh] md:h-[60vh] overflow-hidden">
-        <img
-          src={treatmentImg}
-          alt={t("heroImgAlt")}
-          className="w-full h-full object-cover"
-          width={1920}
-          height={1080}
-        />
       </div>
     </section>
   );
