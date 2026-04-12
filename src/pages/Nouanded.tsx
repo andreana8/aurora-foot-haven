@@ -138,6 +138,7 @@ const Nouanded = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
