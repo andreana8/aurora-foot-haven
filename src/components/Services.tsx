@@ -1,6 +1,6 @@
-import clinicImg from "@/assets/clinic-room.jpg";
+import clinicImg from "@/assets/clinic-room-new.png";
 import certificateImg from "@/assets/certificate.jpg";
-import aparaatImg from "@/assets/aparaat-jalahooldus.png";
+import aparaatImg from "@/assets/aparaat-jalahooldus-new.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
@@ -34,7 +34,7 @@ const Services = () => {
                 </span>
               </div>
               <div className="overflow-hidden aspect-[4/3] mb-6">
-                <img src={card.image} alt={card.alt} className="w-full h-full object-cover" />
+                <img src={card.image} alt={card.alt} className="w-full h-full object-scale-down" />
               </div>
               <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0">
                 {card.description}
