@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section id="top" className="relative h-screen flex flex-col">
       {/* Full-bleed background image */}
-      <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "1.2s" }}>
+      <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
         <img
           src={treatmentImg}
           alt={t("heroImgAlt")}
