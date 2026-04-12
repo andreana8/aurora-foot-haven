@@ -30,16 +30,22 @@ const Services = () => {
 
   return (
     <section id="teenused" className="py-24 bg-background relative overflow-hidden" ref={sectionRef}>
-      {/* Animated ribbon behind cards */}
-      <div
-        className="absolute top-1/2 -translate-y-1/2 h-24 transition-all duration-1000 ease-out"
+      {/* Animated wavy ribbon behind cards */}
+      <svg
+        className="absolute top-1/2 -translate-y-1/2 w-full transition-all duration-1000 ease-out"
         style={{
-          backgroundColor: "#02acbd",
-          width: ribbonVisible ? "100%" : "0%",
-          left: 0,
           opacity: ribbonVisible ? 0.15 : 0,
+          transform: `translate(${ribbonVisible ? "0%" : "-100%"}, -50%)`,
         }}
-      />
+        viewBox="0 0 1440 200"
+        preserveAspectRatio="none"
+        height="200"
+      >
+        <path
+          d="M0,100 C240,40 480,160 720,100 C960,40 1200,160 1440,100 L1440,200 C1200,260 960,140 720,200 C480,260 240,140 0,200 Z"
+          fill="#02acbd"
+        />
+      </svg>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
