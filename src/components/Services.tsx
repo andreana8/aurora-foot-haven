@@ -36,7 +36,7 @@ const Services = () => {
               <div className="overflow-hidden aspect-[4/3] mb-6">
                 <img src={card.image} alt={card.alt} className="w-full h-full object-scale-down" />
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0">
+              <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wider mx-0 my-0 px-0 py-0 mt-auto text-center">
                 {card.description}
               </p>
             </div>
