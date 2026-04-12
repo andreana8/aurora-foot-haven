@@ -21,9 +21,9 @@ const Services = () => {
   }, []);
 
   const serviceCards = [
-    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc"), image: clinicImg, alt: t("clinicImgAlt") },
-    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc"), image: aparaatImg, alt: "professionaalne aparaat jalahooldus" },
-    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc"), image: certificateImg, alt: t("certImgAlt") },
+    { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc") },
+    { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc") },
+    { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
   ];
 
   return (
