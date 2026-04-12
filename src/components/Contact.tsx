@@ -24,7 +24,7 @@ const Contact = () => {
             Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.
           </p>
           <p className="text-foreground text-sm font-bold mb-8">Tasumine sularahas.</p>
-          <div className="border-t border-border pt-6 text-xs text-muted-foreground max-w-md">
+          <div className="border-t border-border pt-6 text-xs text-muted-foreground max-w-md mx-auto text-center">
             <p>
               Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne
               vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.
