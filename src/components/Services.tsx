@@ -2,9 +2,25 @@ import clinicImg from "@/assets/clinic-room-new.png";
 import certificateImg from "@/assets/certificate-updated.png";
 import aparaatImg from "@/assets/aparaat-jalahooldus-new.png";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect, useRef, useState } from "react";
 
 const Services = () => {
   const { t } = useLanguage();
+  const sectionRef = useRef<HTMLElement>(null);
+  const [ribbonVisible, setRibbonVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setRibbonVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   const serviceCards = [
     { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc"), image: clinicImg, alt: t("clinicImgAlt") },
@@ -13,8 +29,19 @@ const Services = () => {
   ];
 
   return (
-    <section id="teenused" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="teenused" className="py-24 bg-background relative overflow-hidden" ref={sectionRef}>
+      {/* Animated ribbon behind cards */}
+      <div
+        className="absolute top-1/2 -translate-y-1/2 h-24 transition-all duration-1000 ease-out"
+        style={{
+          backgroundColor: "#02acbd",
+          width: ribbonVisible ? "100%" : "0%",
+          left: 0,
+          opacity: ribbonVisible ? 0.15 : 0,
+        }}
+      />
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
