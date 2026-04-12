@@ -1,12 +1,15 @@
 import buildingImg from "@/assets/building.png";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Location = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="asukoht" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
-            Asukoht
+            {t("locationTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
@@ -14,24 +17,24 @@ const Location = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8">
             <p className="text-lg text-foreground">
-              Asume Aurora Medica Kliinikus, 2. korrusel ruumis B1-217
+              {t("locationDesc")}
             </p>
             <div className="space-y-6">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">Aadress</p>
-                <p className="text-foreground">Kadaka Trade Center, Kadaka tee 42B, Tallinn, 12919</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("address")}</p>
+                <p className="text-foreground">{t("addressValue")}</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">Sissepääs</p>
-                <p className="text-foreground">Paremal pool sissepääs B, 2. korrusele saab ka liftiga.</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("entrance")}</p>
+                <p className="text-foreground">{t("entranceValue")}</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">Parkimine</p>
-                <p className="text-foreground">B-sissepääsu vastas, tasuta (registreerida trepikojas oleval monitoril)</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("parking")}</p>
+                <p className="text-foreground">{t("parkingValue")}</p>
               </div>
             </div>
             <div className="overflow-hidden">
-              <img src={buildingImg} alt="Kadaka Trade Center - sissepääs B" className="w-full h-auto object-cover" />
+              <img src={buildingImg} alt={t("buildingImgAlt")} className="w-full h-auto object-cover" />
             </div>
           </div>
           <div className="overflow-hidden">
@@ -43,7 +46,7 @@ const Location = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Kadaka Trade Center asukoht"
+              title={t("mapTitle")}
             />
           </div>
         </div>
