@@ -15,19 +15,21 @@ const Location = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-              {t("locationLine1")}
-            </p>
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-              {t("locationLine2")}
-            </p>
-          </div>
-          <div className="space-y-8 text-center">
+          <div className="text-center space-y-8">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                {t("locationLine1")}
+              </p>
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+                {t("locationLine2")}
+              </p>
+            </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">{t("address")}</p>
               <p className="text-xl md:text-2xl text-foreground">{t("addressValue")}</p>
             </div>
+          </div>
+          <div className="space-y-8 text-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">{t("entrance")}</p>
               <p className="text-xl md:text-2xl text-foreground">{t("entranceValue")}</p>
