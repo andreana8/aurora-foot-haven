@@ -1,4 +1,4 @@
-import buildingImg from "@/assets/building.png";
+import buildingImg from "@/assets/building.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Location = () => {

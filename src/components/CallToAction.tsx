@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import ctaImage from "@/assets/cta-feet.png";
+import ctaImage from "@/assets/cta-feet.jpg";
 
 const CallToAction = () => {
   const { t } = useLanguage();

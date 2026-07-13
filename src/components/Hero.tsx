@@ -1,4 +1,4 @@
-import treatmentImg from "@/assets/jalahooldus-kogu-perele.png";
+import treatmentImg from "@/assets/jalahooldus-kogu-perele.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const marqueeItems = [
