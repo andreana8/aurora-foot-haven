@@ -14,20 +14,20 @@ const Contact = () => {
         </div>
 
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+          <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
             {t("bookingRequired")}
           </p>
-          <p className="text-foreground mb-4 text-lg">{t("bookingCall")}</p>
+          <p className="text-foreground mb-4 text-xl md:text-2xl">{t("bookingCall")}</p>
           <a
             href="tel:+37258502300"
-            className="text-4xl font-heading font-medium text-foreground hover:opacity-50 transition-opacity block mb-8"
+            className="text-4xl md:text-5xl font-heading font-medium text-foreground hover:opacity-50 transition-opacity block mb-8"
           >
             +372 5850 2300
           </a>
-          <p className="text-muted-foreground text-sm mb-3">
+          <p className="text-muted-foreground text-base mb-3">
             {t("bookingBusy")}
           </p>
-          <p className="text-foreground text-lg font-bold mb-8">{t("paymentCash")}</p>
+          <p className="text-foreground text-xl md:text-2xl font-bold mb-8">{t("paymentCash")}</p>
           <div className="border-t border-border pt-6 text-xs text-muted-foreground max-w-md mx-auto text-center">
             <p>{t("noShowPolicy")}</p>
           </div>
