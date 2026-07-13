@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="teenused" className="py-24 bg-background relative overflow-hidden" ref={sectionRef}>
+    <section id="teenused" className="min-h-screen py-24 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
       {/* Animated wavy ribbon behind cards */}
       <svg
         className="absolute top-1/2 w-full"
