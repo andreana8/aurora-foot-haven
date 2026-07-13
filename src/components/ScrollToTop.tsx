@@ -15,7 +15,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-8 right-8 z-50 bg-foreground text-background w-10 h-10 rounded-full flex items-center justify-center hover:opacity-70 transition-opacity cursor-pointer"
+      className="fixed bottom-8 right-8 z-50 bg-[#f8a13d] text-white w-10 h-10 rounded-full flex items-center justify-center hover:opacity-70 transition-opacity cursor-pointer"
       aria-label="Tagasi üles"
     >
       <ArrowUp className="w-5 h-5" />
