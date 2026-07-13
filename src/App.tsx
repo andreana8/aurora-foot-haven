@@ -19,6 +19,8 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTopOnRouteChange />
+
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/nouanded" element={<Nouanded />} />
