@@ -4,8 +4,8 @@ const Contact = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="kontakt" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="kontakt" className="min-h-screen py-24 bg-background flex items-center">
+      <div className="container mx-auto px-4 w-full">
         <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("bookingTitle")}
