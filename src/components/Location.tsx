@@ -16,25 +16,25 @@ const Location = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
               {t("locationLine1")}
             </p>
-            <p className="text-lg text-foreground">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
               {t("locationLine2")}
             </p>
           </div>
-          <div className="space-y-6 text-center">
+          <div className="space-y-8 text-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("address")}</p>
-              <p className="text-foreground">{t("addressValue")}</p>
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">{t("address")}</p>
+              <p className="text-xl md:text-2xl text-foreground">{t("addressValue")}</p>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("entrance")}</p>
-              <p className="text-foreground">{t("entranceValue")}</p>
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">{t("entrance")}</p>
+              <p className="text-xl md:text-2xl text-foreground">{t("entranceValue")}</p>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">{t("parking")}</p>
-              <p className="text-foreground">{t("parkingValue")}</p>
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">{t("parking")}</p>
+              <p className="text-xl md:text-2xl text-foreground">{t("parkingValue")}</p>
             </div>
           </div>
         </div>
