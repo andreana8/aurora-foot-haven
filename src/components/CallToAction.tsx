@@ -15,12 +15,12 @@ const CallToAction = () => {
           <p className="mt-6 text-muted-foreground text-sm uppercase tracking-wider font-semibold max-w-md">
             Professionaalne jalahooldus mugavas ja rahulikus keskkonnas – sinu jalad on heades kätes.
           </p>
-          <a
-            href="#kontakt"
-            className="mt-8 inline-block px-8 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-sm font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+          <button
+            onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
+            className="mt-8 inline-block px-8 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-sm font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full cursor-pointer"
           >
             Broneeri aeg
-          </a>
+          </button>
         </div>
         <div className="flex-1">
           <img
