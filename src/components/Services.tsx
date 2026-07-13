@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="teenused" className="py-24 bg-background relative overflow-hidden" ref={sectionRef}>
+    <section id="teenused" className="min-h-screen py-24 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
       {/* Animated wavy ribbon behind cards */}
       <svg
         className="absolute top-1/2 w-full"
@@ -46,7 +46,7 @@ const Services = () => {
         />
       </svg>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 w-full">
         <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
