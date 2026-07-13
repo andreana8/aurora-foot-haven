@@ -7,6 +7,8 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index.tsx";
 import Nouanded from "./pages/Nouanded.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
+
 
 const queryClient = new QueryClient();
 
@@ -17,6 +19,8 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTopOnRouteChange />
+
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/nouanded" element={<Nouanded />} />
