@@ -1,7 +1,21 @@
+import { useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const CALENDLY_URL = "https://calendly.com/jalahoolduskabinet";
 
 const Contact = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    const existing = document.querySelector<HTMLScriptElement>(
+      'script[src="https://assets.calendly.com/assets/external/widget.js"]'
+    );
+    if (existing) return;
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <section id="kontakt" className="min-h-screen py-24 bg-background flex items-center">
@@ -11,6 +25,14 @@ const Contact = () => {
             {t("bookingTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-16">
+          <div
+            className="calendly-inline-widget"
+            data-url={`${CALENDLY_URL}?hide_gdpr_banner=1`}
+            style={{ minWidth: "320px", height: "700px" }}
+          />
         </div>
 
         <div className="max-w-xl mx-auto text-center">
