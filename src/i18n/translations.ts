@@ -262,6 +262,8 @@ export const translations = {
     paymentCash: "Оплата наличными.",
     noShowPolicy: "В случае неявки на приём без уведомления не менее чем за 24 часа, клиент обязан оплатить услугу в полном объёме.",
     followFacebook: "Следите за нами в Facebook",
+    bookNow: "Записаться",
+
 
     footerName: "Уход за ногами для всей семьи",
     footerAdvice: "Советы для здоровых ног",
