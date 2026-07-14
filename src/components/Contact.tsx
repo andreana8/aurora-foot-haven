@@ -32,8 +32,9 @@ const Contact = () => {
             <div
               className="calendly-inline-widget"
               data-url={`${CALENDLY_URL}?hide_gdpr_banner=1`}
-              style={{ minWidth: "320px", height: "700px" }}
+              style={{ minWidth: "320px", height: "900px" }}
             />
+
           </div>
 
           <div className="text-center">
