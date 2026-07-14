@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div>
             <div
               className="calendly-inline-widget"
@@ -36,7 +36,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="text-center">
+          <div className="text-center flex flex-col justify-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
               {t("bookingRequired")}
             </p>
