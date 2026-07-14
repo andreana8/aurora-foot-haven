@@ -72,6 +72,7 @@ const Hero = () => {
               <p className="whitespace-pre-line text-foreground text-base md:text-lg leading-relaxed mt-4">
                 {t("aboutBio")}
               </p>
+              </div>
             </DialogContent>
           </Dialog>
         </nav>
