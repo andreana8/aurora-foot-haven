@@ -5,11 +5,13 @@ const marqueeItems = [
   "JALAHOOLDUS",
   "FOOT CARE",
   "ПЕДИКЮР",
+  "JALKAHOITO",
   "TALLINN",
   "AURORA MEDICA",
   "JALAHOOLDUS",
   "FOOT CARE",
   "ПЕДИКЮР",
+  "JALKAHOITO",
   "TALLINN",
   "AURORA MEDICA",
 ];
