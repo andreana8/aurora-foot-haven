@@ -50,12 +50,13 @@ const Services = () => {
       </svg>
 
       <div className="container mx-auto px-4 relative z-10 w-full">
-        <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
+        <div className="mb-12 md:mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
+
 
         <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card, index) => (
