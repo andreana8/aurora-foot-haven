@@ -40,7 +40,7 @@ export const translations = {
     // Contact
     bookingTitle: "Broneerimine",
     bookingRequired: "Vajalik on eelbroneerimine",
-    bookingCall: "Vastuvõtu broneerimiseks helista:",
+    bookingCall: "Vastuvõtu broneerimiseks leidke sobiv aeg või helistage:",
     bookingBusy: "Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.",
     paymentCash: "Tasumine sularahas.",
     noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
@@ -149,7 +149,7 @@ export const translations = {
 
     bookingTitle: "Booking",
     bookingRequired: "Advance booking is required",
-    bookingCall: "To book an appointment, call:",
+    bookingCall: "To book an appointment, pick a time or call:",
     bookingBusy: "If we are busy with appointments, we will call you back at the earliest opportunity.",
     paymentCash: "Payment in cash.",
     noShowPolicy: "If you do not show up for your appointment and do not notify us at least 24 hours in advance, you are obligated to pay for the service in full.",
@@ -253,7 +253,7 @@ export const translations = {
 
     bookingTitle: "Бронирование",
     bookingRequired: "Необходима предварительная запись",
-    bookingCall: "Для записи звоните:",
+    bookingCall: "Для записи выберите удобное время или позвоните:",
     bookingBusy: "Если мы заняты приёмом, мы перезвоним вам при первой возможности.",
     paymentCash: "Оплата наличными.",
     noShowPolicy: "В случае неявки на приём без уведомления не менее чем за 24 часа, клиент обязан оплатить услугу в полном объёме.",
