@@ -5,16 +5,17 @@ const Location = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="asukoht" className="py-24 bg-muted">
+    <section id="asukoht" className="py-16 md:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="mb-20 text-center">
+        <div className="mb-12 md:mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("locationTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
+
           <div className="text-center space-y-8">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
