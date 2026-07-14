@@ -54,7 +54,15 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="kontakt" className="min-h-screen py-24 bg-background flex items-center">
+    <section id="kontakt" className="relative min-h-screen py-24 flex items-center overflow-hidden bg-[radial-gradient(ellipse_at_top_left,#e6f6f8_0%,#ffffff_45%,#c9ecf1_100%)]">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.35] mix-blend-multiply"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+        }}
+      />
       <div className="container mx-auto px-4 w-full">
         <div className="mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
