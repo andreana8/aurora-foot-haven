@@ -7,6 +7,9 @@ export const translations = {
     services: "Teenused",
     location: "Asukoht",
     contact: "Kontakt",
+    about: "Meist",
+    aboutTitle: "Tere, olen Merike",
+    aboutBio: "Olen jalahooldusspetsialist ning Tartu Tervishoiu Kõrgkooli podoloogia eriala tudeng. Olen tegelenud jalahooldusega alates 2020. aastast ning täiendan pidevalt oma teadmisi ja oskusi, et pakkuda klientidele professionaalset ja turvalist jalahooldust.\n\nMinu kabinetti on oodatud igas vanuses kliendid – nii need, kes soovivad regulaarset jalgade hooldust, kui ka need, kes vajavad abi erinevate jalgade ja küünte probleemide korral. Minu eesmärk on pakkuda personaalset lähenemist, leida igale kliendile sobiv lahendus ning aidata säilitada jalgade tervist ja heaolu.\n\nPean väga oluliseks kõrget hügieenitaset ja turvalist töökeskkonda. Kõik instrumendid läbivad nõuetekohase puhastuse ja steriliseerimise ning töös kasutan kvaliteetseid seadmeid ja vahendeid, et tagada parim võimalik hooldus.\n\nUsun, et terved ja hooldatud jalad parandavad elukvaliteeti ning annavad kindlust igaks päevaks. Samuti usun, et ükski inimene ei peaks tundma piinlikkust oma jalgade pärast. Olen siin selleks, et aidata – professionaalselt, hoolivalt ja hinnanguid andmata. Soovin, et iga klient tunneks end minu juures oodatuna ja lahkuks kergema sammu ning parema enesetundega.\n\nEesti Podoloogide ja Jalaspetsialistide Seltsi liige\nTartu Tervishoiu Kõrgkooli podoloogia eriala tudeng",
     heroImgAlt: "Jalahooldus",
 
     // Services
