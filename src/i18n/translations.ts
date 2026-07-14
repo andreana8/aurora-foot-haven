@@ -156,6 +156,8 @@ export const translations = {
     paymentCash: "Payment in cash.",
     noShowPolicy: "If you do not show up for your appointment and do not notify us at least 24 hours in advance, you are obligated to pay for the service in full.",
     followFacebook: "Follow us on Facebook",
+    bookNow: "Book now",
+
 
     footerName: "Foot Care for the Whole Family",
     footerAdvice: "Tips for healthy feet",
