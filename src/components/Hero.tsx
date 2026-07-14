@@ -1,6 +1,6 @@
 import treatmentImg from "@/assets/jalahooldus-kogu-perele.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const marqueeItems = [
   "JALAHOOLDUS",
