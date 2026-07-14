@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div
               ref={widgetRef}
