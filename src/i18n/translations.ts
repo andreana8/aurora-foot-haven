@@ -388,6 +388,9 @@ export const translations = {
     services: "Palvelut",
     location: "Sijainti",
     contact: "Yhteystiedot",
+    about: "Meistä",
+    aboutTitle: "Hei, olen Merike",
+    aboutBio: "Olen jalkojenhoidon asiantuntija ja Tarton terveydenhuollon ammattikorkeakoulun podologian opiskelija. Olen työskennellyt jalkojenhoidon parissa vuodesta 2020 ja kehitän jatkuvasti tietojani ja taitojani tarjotakseni asiakkaille ammattitaitoista ja turvallista jalkojenhoitoa.\n\nVastaanotolleni ovat tervetulleita kaikenikäiset asiakkaat – niin ne, jotka haluavat säännöllistä jalkojenhoitoa, kuin nekin, jotka tarvitsevat apua erilaisiin jalka- ja kynsiongelmiin. Tavoitteeni on tarjota henkilökohtainen lähestymistapa, löytää jokaiselle asiakkaalle sopiva ratkaisu ja auttaa säilyttämään jalkojen terveys ja hyvinvointi.\n\nPidän erittäin tärkeänä korkeaa hygieniatasoa ja turvallista työympäristöä. Kaikki instrumentit puhdistetaan ja steriloidaan asianmukaisesti, ja käytän laadukkaita laitteita ja materiaaleja parhaan mahdollisen hoidon takaamiseksi.\n\nUskon, että terveet ja hyvin hoidetut jalat parantavat elämänlaatua ja tuovat varmuutta joka päivään. Uskon myös, ettei kenenkään tarvitse hävetä jalkojaan. Olen täällä auttaakseni – ammattitaitoisesti, huolehtivasti ja tuomitsematta. Toivon, että jokainen asiakas tuntee olonsa tervetulleeksi ja lähtee kevyemmin askelin ja paremmalla mielellä.\n\nViron podologien ja jalkaspesialistien seuran jäsen\nTarton terveydenhuollon ammattikorkeakoulun podologian opiskelija",
     heroImgAlt: "Jalkojen hoito",
 
     servicesTitle: "Palvelut",
