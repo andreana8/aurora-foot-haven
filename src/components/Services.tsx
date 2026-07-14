@@ -68,7 +68,7 @@ const Services = () => {
                   {card.price}
                 </span>
               </div>
-              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold">
+              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold mb-6">
                 {card.description}
               </p>
               <button
@@ -76,7 +76,7 @@ const Services = () => {
                   const el = document.getElementById("kontakt");
                   el?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="mt-6 w-full px-6 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+                className="mt-auto w-full px-6 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
               >
                 {t("bookNow")}
               </button>
