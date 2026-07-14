@@ -42,7 +42,7 @@ const Location = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
           <div className="overflow-hidden">
             <img src={buildingImg} alt={t("buildingImgAlt")} className="w-full h-auto object-cover" />
           </div>
