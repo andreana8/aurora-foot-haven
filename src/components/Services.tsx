@@ -60,15 +60,16 @@ const Services = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card, index) => (
-            <div key={card.title} className="bg-muted p-6 flex flex-col hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
+            <div key={card.title} className="bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md">
+              <div className="flex items-start justify-between gap-3 mb-3">
+                <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-lg font-extrabold">
                   {card.title}
                 </h3>
-                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-2xl">
+                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-xl md:text-2xl">
                   {card.price}
                 </span>
               </div>
+
               <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold mb-6">
                 {card.description}
               </p>
