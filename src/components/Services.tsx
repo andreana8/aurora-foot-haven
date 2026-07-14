@@ -68,7 +68,17 @@ const Services = () => {
               <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold">
                 {card.description}
               </p>
+              <button
+                onClick={() => {
+                  const el = document.getElementById("kontakt");
+                  el?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="mt-6 self-start px-6 py-2 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+              >
+                {t("bookNow")}
+              </button>
             </div>
+
           ))}
 
         </div>
