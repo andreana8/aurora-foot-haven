@@ -1,20 +1,56 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CALENDLY_URL = "https://calendly.com/jalahoolduskabinet";
+const CALENDLY_SCRIPT = "https://assets.calendly.com/assets/external/widget.js";
+const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
+
+declare global {
+  interface Window {
+    Calendly?: {
+      initInlineWidget: (opts: { url: string; parentElement: HTMLElement }) => void;
+    };
+  }
+}
 
 const Contact = () => {
   const { t } = useLanguage();
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const existing = document.querySelector<HTMLScriptElement>(
-      'script[src="https://assets.calendly.com/assets/external/widget.js"]'
+    // Ensure stylesheet is present
+    if (!document.querySelector(`link[href="${CALENDLY_CSS}"]`)) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = CALENDLY_CSS;
+      document.head.appendChild(link);
+    }
+
+    const init = () => {
+      if (!widgetRef.current || !window.Calendly) return;
+      widgetRef.current.innerHTML = "";
+      window.Calendly.initInlineWidget({
+        url: `${CALENDLY_URL}?hide_gdpr_banner=1`,
+        parentElement: widgetRef.current,
+      });
+    };
+
+    if (window.Calendly) {
+      init();
+      return;
+    }
+
+    let script = document.querySelector<HTMLScriptElement>(
+      `script[src="${CALENDLY_SCRIPT}"]`
     );
-    if (existing) return;
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
+    if (!script) {
+      script = document.createElement("script");
+      script.src = CALENDLY_SCRIPT;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    script.addEventListener("load", init);
+    return () => script?.removeEventListener("load", init);
   }, []);
 
   return (
@@ -30,11 +66,11 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <div
-              className="calendly-inline-widget"
-              data-url={`${CALENDLY_URL}?hide_gdpr_banner=1`}
+              ref={widgetRef}
               style={{ minWidth: "320px", height: "650px" }}
             />
           </div>
+
 
           <div className="text-center flex flex-col items-center pt-0">
             <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
