@@ -40,7 +40,7 @@ export const translations = {
     // Contact
     bookingTitle: "Broneerimine",
     bookingRequired: "Vajalik on eelbroneerimine",
-    bookingCall: "Vastuvõtu broneerimiseks helista:",
+    bookingCall: "Vastuvõtu broneerimiseks leidke sobiv aeg või helistage:",
     bookingBusy: "Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.",
     paymentCash: "Tasumine sularahas.",
     noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
