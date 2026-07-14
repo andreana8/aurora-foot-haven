@@ -54,6 +54,25 @@ const Hero = () => {
           >
             {t("contact")}
           </button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-8 py-3 text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
+              >
+                {t("about")}
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto animate-fade-in">
+              <DialogHeader>
+                <DialogTitle className="text-2xl md:text-3xl font-heading font-medium">
+                  {t("aboutTitle")}
+                </DialogTitle>
+              </DialogHeader>
+              <p className="whitespace-pre-line text-foreground text-base md:text-lg leading-relaxed mt-4">
+                {t("aboutBio")}
+              </p>
+            </DialogContent>
+          </Dialog>
         </nav>
       </div>
 
