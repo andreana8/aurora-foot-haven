@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="teenused" className="min-h-screen py-24 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
+    <section id="teenused" className="min-h-screen py-16 md:py-24 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
       {/* Animated wavy ribbon behind cards */}
       <svg
         className="absolute top-1/2 w-full"
@@ -50,24 +50,26 @@ const Services = () => {
       </svg>
 
       <div className="container mx-auto px-4 relative z-10 w-full">
-        <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
+        <div className="mb-12 md:mb-20 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
+
         <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card, index) => (
-            <div key={card.title} className="bg-muted p-6 flex flex-col hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
+            <div key={card.title} className="bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md">
+              <div className="flex items-start justify-between gap-3 mb-3">
+                <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-lg font-extrabold">
                   {card.title}
                 </h3>
-                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-2xl">
+                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-xl md:text-2xl">
                   {card.price}
                 </span>
               </div>
+
               <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold mb-6">
                 {card.description}
               </p>

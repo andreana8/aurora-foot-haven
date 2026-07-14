@@ -34,42 +34,42 @@ const Hero = () => {
       </div>
 
       {/* Nav buttons near the bottom */}
-      <div className="relative z-10 flex-1 flex items-end justify-center pb-20 px-4">
-        <nav className="flex flex-wrap gap-3">
+      <div className="relative z-10 flex-1 flex items-end justify-center pb-10 sm:pb-20 px-4">
+        <nav className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-md sm:max-w-none">
           <button
             onClick={() => document.getElementById("teenused")?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-8 py-3 text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("services")}
           </button>
           <button
             onClick={() => document.getElementById("asukoht")?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-8 py-3 text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("location")}
           </button>
           <button
             onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-8 py-3 text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
+            className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
           >
             {t("contact")}
           </button>
           <Dialog>
             <DialogTrigger asChild>
               <button
-                className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-8 py-3 text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
+                className="bg-[#f8a13d] border border-[#f8a13d] text-background rounded-full px-5 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-medium hover:bg-[#f8a13d]/80 transition-colors cursor-pointer"
               >
                 {t("about")}
               </button>
             </DialogTrigger>
-            <DialogContent className="!max-w-5xl w-[92vw] max-h-[85vh] overflow-y-auto animate-fade-in flex items-center justify-center p-8 md:p-12">
+            <DialogContent className="!max-w-5xl w-[92vw] max-h-[85vh] overflow-y-auto animate-fade-in flex items-center justify-center p-6 sm:p-8 md:p-12">
               <div className="max-w-4xl w-full">
               <DialogHeader>
-                <DialogTitle className="text-2xl md:text-3xl font-heading font-medium">
+                <DialogTitle className="text-xl sm:text-2xl md:text-3xl font-heading font-medium">
                   {t("aboutTitle")}
                 </DialogTitle>
               </DialogHeader>
-              <p className="whitespace-pre-line text-foreground text-base md:text-lg leading-relaxed mt-4">
+              <p className="whitespace-pre-line text-foreground text-sm sm:text-base md:text-lg leading-relaxed mt-4">
                 {t("aboutBio")}
               </p>
               </div>
@@ -77,6 +77,7 @@ const Hero = () => {
           </Dialog>
         </nav>
       </div>
+
 
       {/* Scrolling marquee at the bottom */}
       <div className="relative z-10 bg-[#02acbd] text-background py-3 overflow-hidden">
