@@ -140,6 +140,9 @@ export const translations = {
     services: "Services",
     location: "Location",
     contact: "Contact",
+    about: "About",
+    aboutTitle: "Hi, I'm Merike",
+    aboutBio: "I am a foot care specialist and a podiatry student at Tartu Health Care College. I have been working in foot care since 2020 and continuously improve my knowledge and skills to provide clients with professional and safe foot care.\n\nClients of all ages are welcome at my clinic – both those who want regular foot care and those who need help with various foot and nail problems. My goal is to offer a personal approach, find the right solution for every client, and help maintain the health and well-being of their feet.\n\nI place great importance on a high level of hygiene and a safe working environment. All instruments undergo proper cleaning and sterilization, and I use high-quality equipment and materials to ensure the best possible care.\n\nI believe that healthy and well-cared-for feet improve quality of life and provide confidence every day. I also believe that no one should feel embarrassed about their feet. I am here to help – professionally, caringly and without judgement. I want every client to feel welcome and to leave with a lighter step and a better feeling.\n\nMember of the Estonian Society of Podiatrists and Foot Specialists\nPodiatry student at Tartu Health Care College",
     heroImgAlt: "Foot care",
 
     servicesTitle: "Services",
