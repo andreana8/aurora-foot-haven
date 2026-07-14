@@ -73,20 +73,14 @@ const Contact = () => {
 
 
           <div className="text-center flex flex-col items-center pt-0">
-            <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-              {t("bookingRequired")}
-            </p>
-            <p className="text-foreground mb-4 text-xl md:text-2xl">{t("bookingCall")}</p>
+            <p className="text-foreground mb-6 text-xl md:text-2xl">{t("bookingCall")}</p>
             <a
               href="tel:+37258502300"
               className="text-4xl md:text-5xl font-heading font-medium text-foreground hover:opacity-50 transition-opacity block mb-8"
             >
               +372 5850 2300
             </a>
-            <p className="text-muted-foreground text-base mb-3">
-              {t("bookingBusy")}
-            </p>
-            <p className="text-foreground text-xl md:text-2xl font-bold">{t("paymentCash")}</p>
+            <p className="text-foreground text-xl md:text-2xl">{t("paymentCash")}</p>
           </div>
         </div>
 
