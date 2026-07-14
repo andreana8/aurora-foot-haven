@@ -48,10 +48,10 @@ export const translations = {
 
     // Contact
     bookingTitle: "Broneerimine",
-    bookingRequired: "Vajalik on eelbroneerimine",
-    bookingCall: "Vastuvõtu broneerimiseks leidke sobiv aeg või helistage:",
-    bookingBusy: "Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.",
-    paymentCash: "Tasumine sularahas.",
+    bookingRequired: "",
+    bookingCall: "Broneeri aeg personaalsele jalahooldusele mugavalt internetis või telefonil",
+    bookingBusy: "",
+    paymentCash: "Teenuse eest tasumine toimub sularahas.",
     noShowPolicy: "Palume arvestada:\n\nTeie jaoks broneeritud aeg on spetsiaalselt planeeritud ning ette valmistatud. Kui Teil ei ole võimalik kokkulepitud ajal tulla, palume sellest teada anda vähemalt 24 tundi ette.\n\nÕigeaegne tühistamine võimaldab pakkuda aega teistele klientidele. Etteteatamata puudumise või hilisema tühistamise korral võib rakenduda 50% teenuse hinnast.\n\nHoolduste ajal ei pruugi me alati telefonile vastata. Võtame Teiega ühendust esimesel võimalusel.",
     followFacebook: "Jälgi meid Facebookis",
     bookNow: "Broneeri aeg",
