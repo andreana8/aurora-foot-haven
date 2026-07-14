@@ -24,6 +24,9 @@ const Services = () => {
     { title: t("service1Title"), price: t("service1Price"), description: t("service1Desc") },
     { title: t("service2Title"), price: t("service2Price"), description: t("service2Desc") },
     { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
+    { title: t("service4Title"), price: t("service4Price"), description: t("service4Desc") },
+    { title: t("service5Title"), price: t("service5Price"), description: t("service5Desc") },
+    { title: t("service6Title"), price: t("service6Price"), description: t("service6Desc") },
   ];
 
   return (
