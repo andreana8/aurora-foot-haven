@@ -57,9 +57,9 @@ export const translations = {
     bookNow: "Broneeri aeg",
 
     // CTA
-    ctaTitlePart1: "Broneeri aeg",
-    ctaTitlePart2: "ja kingi oma jalgadele hoolitsus, mida nad",
-    ctaTitlePart3: "väärivad!",
+    ctaTitlePart1: "Sinu jalad kannavad Sind läbi elu.",
+    ctaTitlePart2: "Nende heaolu eest hoolitsemine on investeering",
+    ctaTitlePart3: "Sinu tervisesse.",
     ctaSubtitle: "Professionaalne jalahooldus mugavas ja rahulikus keskkonnas – sinu jalad on heades kätes.",
     ctaButton: "Broneeri aeg",
 
@@ -183,9 +183,9 @@ export const translations = {
     followFacebook: "Follow us on Facebook",
     bookNow: "Book now",
 
-    ctaTitlePart1: "Book an appointment",
-    ctaTitlePart2: "and give your feet the care they",
-    ctaTitlePart3: "deserve!",
+    ctaTitlePart1: "Your feet carry you through life.",
+    ctaTitlePart2: "Caring for their wellbeing is an investment in",
+    ctaTitlePart3: "your health.",
     ctaSubtitle: "Professional foot care in a comfortable and calm environment – your feet are in good hands.",
     ctaButton: "Book an appointment",
 
@@ -304,9 +304,9 @@ export const translations = {
     followFacebook: "Следите за нами в Facebook",
     bookNow: "Записаться",
 
-    ctaTitlePart1: "Запишитесь на приём",
-    ctaTitlePart2: "и подарите своим ногам уход, которого они",
-    ctaTitlePart3: "заслуживают!",
+    ctaTitlePart1: "Ваши ноги несут вас через всю жизнь.",
+    ctaTitlePart2: "Забота о них — это инвестиция в",
+    ctaTitlePart3: "ваше здоровье.",
     ctaSubtitle: "Профессиональный уход за ногами в комфортной и спокойной обстановке — ваши ноги в надёжных руках.",
     ctaButton: "Записаться",
 
@@ -425,9 +425,9 @@ export const translations = {
     followFacebook: "Seuraa meitä Facebookissa",
     bookNow: "Varaa aika",
 
-    ctaTitlePart1: "Varaa aika",
-    ctaTitlePart2: "ja anna jaloillesi hoito, jonka ne",
-    ctaTitlePart3: "ansaitsevat!",
+    ctaTitlePart1: "Jalkasi kantavat sinua läpi elämän.",
+    ctaTitlePart2: "Niiden hyvinvoinnista huolehtiminen on sijoitus",
+    ctaTitlePart3: "terveyteesi.",
     ctaSubtitle: "Ammattimainen jalkojen hoito mukavassa ja rauhallisessa ympäristössä – jalkasi ovat hyvissä käsissä.",
     ctaButton: "Varaa aika",
 
