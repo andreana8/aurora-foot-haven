@@ -7,6 +7,9 @@ export const translations = {
     services: "Teenused",
     location: "Asukoht",
     contact: "Kontakt",
+    about: "Meist",
+    aboutTitle: "Tere, olen Merike",
+    aboutBio: "Olen jalahooldusspetsialist ning Tartu Tervishoiu Kõrgkooli podoloogia eriala tudeng. Olen tegelenud jalahooldusega alates 2020. aastast ning täiendan pidevalt oma teadmisi ja oskusi, et pakkuda klientidele professionaalset ja turvalist jalahooldust.\n\nMinu kabinetti on oodatud igas vanuses kliendid – nii need, kes soovivad regulaarset jalgade hooldust, kui ka need, kes vajavad abi erinevate jalgade ja küünte probleemide korral. Minu eesmärk on pakkuda personaalset lähenemist, leida igale kliendile sobiv lahendus ning aidata säilitada jalgade tervist ja heaolu.\n\nPean väga oluliseks kõrget hügieenitaset ja turvalist töökeskkonda. Kõik instrumendid läbivad nõuetekohase puhastuse ja steriliseerimise ning töös kasutan kvaliteetseid seadmeid ja vahendeid, et tagada parim võimalik hooldus.\n\nUsun, et terved ja hooldatud jalad parandavad elukvaliteeti ning annavad kindlust igaks päevaks. Samuti usun, et ükski inimene ei peaks tundma piinlikkust oma jalgade pärast. Olen siin selleks, et aidata – professionaalselt, hoolivalt ja hinnanguid andmata. Soovin, et iga klient tunneks end minu juures oodatuna ja lahkuks kergema sammu ning parema enesetundega.\n\nEesti Podoloogide ja Jalaspetsialistide Seltsi liige\nTartu Tervishoiu Kõrgkooli podoloogia eriala tudeng",
     heroImgAlt: "Jalahooldus",
 
     // Services
@@ -137,6 +140,9 @@ export const translations = {
     services: "Services",
     location: "Location",
     contact: "Contact",
+    about: "About",
+    aboutTitle: "Hi, I'm Merike",
+    aboutBio: "I am a foot care specialist and a podiatry student at Tartu Health Care College. I have been working in foot care since 2020 and continuously improve my knowledge and skills to provide clients with professional and safe foot care.\n\nClients of all ages are welcome at my clinic – both those who want regular foot care and those who need help with various foot and nail problems. My goal is to offer a personal approach, find the right solution for every client, and help maintain the health and well-being of their feet.\n\nI place great importance on a high level of hygiene and a safe working environment. All instruments undergo proper cleaning and sterilization, and I use high-quality equipment and materials to ensure the best possible care.\n\nI believe that healthy and well-cared-for feet improve quality of life and provide confidence every day. I also believe that no one should feel embarrassed about their feet. I am here to help – professionally, caringly and without judgement. I want every client to feel welcome and to leave with a lighter step and a better feeling.\n\nMember of the Estonian Society of Podiatrists and Foot Specialists\nPodiatry student at Tartu Health Care College",
     heroImgAlt: "Foot care",
 
     servicesTitle: "Services",
@@ -258,6 +264,9 @@ export const translations = {
     services: "Услуги",
     location: "Местоположение",
     contact: "Контакт",
+    about: "О нас",
+    aboutTitle: "Здравствуйте, я Мерике",
+    aboutBio: "Я специалист по уходу за ногами и студентка специальности подология Тартуского медицинского колледжа. Занимаюсь уходом за ногами с 2020 года и постоянно совершенствую свои знания и навыки, чтобы предлагать клиентам профессиональный и безопасный уход.\n\nВ мой кабинет приглашаются клиенты любого возраста – как те, кто хочет регулярного ухода за ногами, так и те, кто нуждается в помощи при различных проблемах со стопами и ногтями. Моя цель – индивидуальный подход, подходящее решение для каждого клиента и сохранение здоровья и благополучия ног.\n\nЯ придаю большое значение высокому уровню гигиены и безопасной рабочей среде. Все инструменты проходят надлежащую очистку и стерилизацию, а в работе используются качественные приборы и материалы, чтобы обеспечить наилучший уход.\n\nЯ верю, что здоровые и ухоженные ноги улучшают качество жизни и придают уверенности каждый день. Также я убеждена, что ни один человек не должен стесняться своих ног. Я здесь, чтобы помочь – профессионально, заботливо и без осуждения. Хочу, чтобы каждый клиент чувствовал себя желанным гостем и уходил с более лёгким шагом и лучшим самочувствием.\n\nЧлен Эстонского общества подологов и специалистов по стопам\nСтудентка специальности подология Тартуского медицинского колледжа",
     heroImgAlt: "Уход за ногами",
 
     servicesTitle: "Услуги",
@@ -379,6 +388,9 @@ export const translations = {
     services: "Palvelut",
     location: "Sijainti",
     contact: "Yhteystiedot",
+    about: "Meistä",
+    aboutTitle: "Hei, olen Merike",
+    aboutBio: "Olen jalkojenhoidon asiantuntija ja Tarton terveydenhuollon ammattikorkeakoulun podologian opiskelija. Olen työskennellyt jalkojenhoidon parissa vuodesta 2020 ja kehitän jatkuvasti tietojani ja taitojani tarjotakseni asiakkaille ammattitaitoista ja turvallista jalkojenhoitoa.\n\nVastaanotolleni ovat tervetulleita kaikenikäiset asiakkaat – niin ne, jotka haluavat säännöllistä jalkojenhoitoa, kuin nekin, jotka tarvitsevat apua erilaisiin jalka- ja kynsiongelmiin. Tavoitteeni on tarjota henkilökohtainen lähestymistapa, löytää jokaiselle asiakkaalle sopiva ratkaisu ja auttaa säilyttämään jalkojen terveys ja hyvinvointi.\n\nPidän erittäin tärkeänä korkeaa hygieniatasoa ja turvallista työympäristöä. Kaikki instrumentit puhdistetaan ja steriloidaan asianmukaisesti, ja käytän laadukkaita laitteita ja materiaaleja parhaan mahdollisen hoidon takaamiseksi.\n\nUskon, että terveet ja hyvin hoidetut jalat parantavat elämänlaatua ja tuovat varmuutta joka päivään. Uskon myös, ettei kenenkään tarvitse hävetä jalkojaan. Olen täällä auttaakseni – ammattitaitoisesti, huolehtivasti ja tuomitsematta. Toivon, että jokainen asiakas tuntee olonsa tervetulleeksi ja lähtee kevyemmin askelin ja paremmalla mielellä.\n\nViron podologien ja jalkaspesialistien seuran jäsen\nTarton terveydenhuollon ammattikorkeakoulun podologian opiskelija",
     heroImgAlt: "Jalkojen hoito",
 
     servicesTitle: "Palvelut",
