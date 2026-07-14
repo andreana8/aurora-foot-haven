@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="teenused" className="min-h-screen py-12 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
+    <section id="teenused" className="min-h-screen py-24 bg-background relative overflow-hidden flex items-center" ref={sectionRef}>
       {/* Animated wavy ribbon behind cards */}
       <svg
         className="absolute top-1/2 w-full"
@@ -50,25 +50,25 @@ const Services = () => {
       </svg>
 
       <div className="container mx-auto px-4 relative z-10 w-full">
-        <div className="mb-8 text-center px-0 py-0 my-0 mx-0">
-          <h2 className="text-2xl md:text-3xl font-heading font-medium text-foreground mb-3 tracking-tight">
+        <div className="mb-20 text-center px-0 py-0 my-0 mx-0">
+          <h2 className="text-3xl md:text-4xl font-heading font-medium text-foreground mb-4 tracking-tight">
             {t("servicesTitle")}
           </h2>
           <div className="w-16 h-px bg-foreground mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-6">
           {serviceCards.map((card, index) => (
-            <div key={card.title} className="bg-muted p-4 flex flex-col hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between gap-3 mb-2">
-                <h3 className="uppercase tracking-wider text-foreground font-sans text-sm font-extrabold">
+            <div key={card.title} className="bg-muted p-6 flex flex-col hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between gap-4 mb-3">
+                <h3 className="uppercase tracking-wider text-foreground font-sans text-lg font-extrabold">
                   {card.title}
                 </h3>
-                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-lg">
+                <span className="text-muted-foreground whitespace-nowrap font-extrabold text-2xl">
                   {card.price}
                 </span>
               </div>
-              <p className="text-muted-foreground leading-snug uppercase tracking-wider text-xs font-semibold">
+              <p className="text-muted-foreground leading-relaxed uppercase tracking-wider text-sm font-semibold">
                 {card.description}
               </p>
               <button
@@ -76,7 +76,7 @@ const Services = () => {
                   const el = document.getElementById("kontakt");
                   el?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="mt-4 w-full px-4 py-2 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+                className="mt-6 w-full px-6 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
               >
                 {t("bookNow")}
               </button>
@@ -87,10 +87,10 @@ const Services = () => {
 
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-12 text-center">
           <Link
             to="/nouanded"
-            className="inline-block px-6 py-2 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-xs font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
+            className="inline-block px-8 py-3 border border-[#02acbd] text-[#02acbd] uppercase tracking-wider text-sm font-bold hover:bg-[#02acbd] hover:text-background transition-colors rounded-full"
           >
             {t("footerAdvice")}
           </Link>
