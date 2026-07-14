@@ -45,6 +45,8 @@ export const translations = {
     paymentCash: "Tasumine sularahas.",
     noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
     followFacebook: "Jälgi meid Facebookis",
+    bookNow: "Broneeri aeg",
+
 
     // Footer
     footerName: "Jalahooldus Kogu Perele",
@@ -154,6 +156,8 @@ export const translations = {
     paymentCash: "Payment in cash.",
     noShowPolicy: "If you do not show up for your appointment and do not notify us at least 24 hours in advance, you are obligated to pay for the service in full.",
     followFacebook: "Follow us on Facebook",
+    bookNow: "Book now",
+
 
     footerName: "Foot Care for the Whole Family",
     footerAdvice: "Tips for healthy feet",
@@ -258,6 +262,8 @@ export const translations = {
     paymentCash: "Оплата наличными.",
     noShowPolicy: "В случае неявки на приём без уведомления не менее чем за 24 часа, клиент обязан оплатить услугу в полном объёме.",
     followFacebook: "Следите за нами в Facebook",
+    bookNow: "Записаться",
+
 
     footerName: "Уход за ногами для всей семьи",
     footerAdvice: "Советы для здоровых ног",
