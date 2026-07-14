@@ -45,6 +45,8 @@ export const translations = {
     paymentCash: "Tasumine sularahas.",
     noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
     followFacebook: "Jälgi meid Facebookis",
+    bookNow: "Broneeri aeg",
+
 
     // Footer
     footerName: "Jalahooldus Kogu Perele",
