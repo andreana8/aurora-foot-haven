@@ -62,7 +62,8 @@ const Hero = () => {
                 {t("about")}
               </button>
             </DialogTrigger>
-            <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto animate-fade-in">
+            <DialogContent className="!max-w-none w-screen h-screen sm:rounded-none border-0 overflow-y-auto animate-fade-in flex items-center justify-center p-8 md:p-16">
+              <div className="max-w-4xl w-full">
               <DialogHeader>
                 <DialogTitle className="text-2xl md:text-3xl font-heading font-medium">
                   {t("aboutTitle")}
