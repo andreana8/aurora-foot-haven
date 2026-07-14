@@ -27,7 +27,7 @@ const Hero = () => {
         <img
           src={treatmentImg}
           alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[65%_30%] sm:object-center"
           width={1920}
           height={1080}
         />
@@ -62,10 +62,10 @@ const Hero = () => {
                 {t("about")}
               </button>
             </DialogTrigger>
-            <DialogContent className="!max-w-5xl w-[92vw] max-h-[85vh] overflow-y-auto animate-fade-in flex items-center justify-center p-6 sm:p-8 md:p-12">
-              <div className="max-w-4xl w-full">
+            <DialogContent className="!max-w-5xl w-[92vw] max-h-[85vh] overflow-y-auto animate-fade-in p-6 sm:p-8 md:p-12">
+              <div className="max-w-4xl w-full mx-auto">
               <DialogHeader>
-                <DialogTitle className="text-xl sm:text-2xl md:text-3xl font-heading font-medium">
+                <DialogTitle className="text-xl sm:text-2xl md:text-3xl font-heading font-medium text-left">
                   {t("aboutTitle")}
                 </DialogTitle>
               </DialogHeader>
