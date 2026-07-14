@@ -5,10 +5,10 @@ const CallToAction = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 max-w-6xl">
-        <div className="flex-1 flex flex-col items-start text-left">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-medium text-foreground leading-snug tracking-tight">
+    <section className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-6xl">
+        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-medium text-foreground leading-snug tracking-tight">
             <span className="italic">{t("ctaTitlePart1")}</span> {t("ctaTitlePart2")}{" "}
             <span className="italic">{t("ctaTitlePart3")}</span>
           </h2>
@@ -22,13 +22,14 @@ const CallToAction = () => {
             {t("ctaButton")}
           </button>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 w-full">
           <img
             src={ctaImage}
             alt="Professionaalne jalahooldus"
-            className="w-full h-auto rounded-2xl object-cover max-h-[400px]"
+            className="w-full h-auto rounded-2xl object-cover max-h-[300px] md:max-h-[400px]"
           />
         </div>
+
       </div>
     </section>
   );
