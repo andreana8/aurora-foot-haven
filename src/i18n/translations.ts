@@ -149,7 +149,7 @@ export const translations = {
 
     bookingTitle: "Booking",
     bookingRequired: "Advance booking is required",
-    bookingCall: "To book an appointment, call:",
+    bookingCall: "To book an appointment, pick a time or call:",
     bookingBusy: "If we are busy with appointments, we will call you back at the earliest opportunity.",
     paymentCash: "Payment in cash.",
     noShowPolicy: "If you do not show up for your appointment and do not notify us at least 24 hours in advance, you are obligated to pay for the service in full.",
