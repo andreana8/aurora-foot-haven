@@ -1,4 +1,4 @@
-export type Language = "et" | "en" | "ru";
+export type Language = "et" | "en" | "ru" | "fi";
 
 export const translations = {
   et: {
@@ -55,6 +55,13 @@ export const translations = {
     noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
     followFacebook: "Jälgi meid Facebookis",
     bookNow: "Broneeri aeg",
+
+    // CTA
+    ctaTitlePart1: "Broneeri aeg",
+    ctaTitlePart2: "ja kingi oma jalgadele hoolitsus, mida nad",
+    ctaTitlePart3: "väärivad!",
+    ctaSubtitle: "Professionaalne jalahooldus mugavas ja rahulikus keskkonnas – sinu jalad on heades kätes.",
+    ctaButton: "Broneeri aeg",
 
 
     // Footer
@@ -176,6 +183,12 @@ export const translations = {
     followFacebook: "Follow us on Facebook",
     bookNow: "Book now",
 
+    ctaTitlePart1: "Book an appointment",
+    ctaTitlePart2: "and give your feet the care they",
+    ctaTitlePart3: "deserve!",
+    ctaSubtitle: "Professional foot care in a comfortable and calm environment – your feet are in good hands.",
+    ctaButton: "Book an appointment",
+
 
     footerName: "Foot Care for the Whole Family",
     footerAdvice: "Tips for healthy feet",
@@ -290,6 +303,12 @@ export const translations = {
     noShowPolicy: "В случае неявки на приём без уведомления не менее чем за 24 часа, клиент обязан оплатить услугу в полном объёме.",
     followFacebook: "Следите за нами в Facebook",
     bookNow: "Записаться",
+
+    ctaTitlePart1: "Запишитесь на приём",
+    ctaTitlePart2: "и подарите своим ногам уход, которого они",
+    ctaTitlePart3: "заслуживают!",
+    ctaSubtitle: "Профессиональный уход за ногами в комфортной и спокойной обстановке — ваши ноги в надёжных руках.",
+    ctaButton: "Записаться",
 
 
     footerName: "Уход за ногами для всей семьи",
