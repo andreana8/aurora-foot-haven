@@ -1,13 +1,8 @@
-import { createContext, useContext, useState, ReactNode } from "react";
+import { useState, ReactNode } from "react";
 import { Language, translations, TranslationKey } from "@/i18n/translations";
+import { LanguageContext } from "./language-context";
 
-interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-  t: (key: TranslationKey) => string;
-}
-
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+export { useLanguage } from "./language-context";
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("et");
@@ -21,10 +16,4 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) throw new Error("useLanguage must be used within LanguageProvider");
-  return context;
 };
