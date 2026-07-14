@@ -52,7 +52,7 @@ export const translations = {
     bookingCall: "Vastuvõtu broneerimiseks leidke sobiv aeg või helistage:",
     bookingBusy: "Vastuvõttudega hõivatuse korral helistame Teile tagasi esimesel võimalusel.",
     paymentCash: "Tasumine sularahas.",
-    noShowPolicy: "Vastuvõtule mitte ilmumisel ning sellest teavitamata jätmisel vähemalt 24h enne vastuvõttu, on klient kohustatud teenuse eest tasuma täies mahus.",
+    noShowPolicy: "Palume arvestada:\n\nTeie jaoks broneeritud aeg on spetsiaalselt planeeritud ning ette valmistatud. Kui Teil ei ole võimalik kokkulepitud ajal tulla, palume sellest teada anda vähemalt 24 tundi ette.\n\nÕigeaegne tühistamine võimaldab pakkuda aega teistele klientidele. Etteteatamata puudumise või hilisema tühistamise korral võib rakenduda 50% teenuse hinnast.\n\nHoolduste ajal ei pruugi me alati telefonile vastata. Võtame Teiega ühendust esimesel võimalusel.",
     followFacebook: "Jälgi meid Facebookis",
     bookNow: "Broneeri aeg",
 
@@ -179,7 +179,7 @@ export const translations = {
     bookingCall: "To book an appointment, pick a time or call:",
     bookingBusy: "If we are busy with appointments, we will call you back at the earliest opportunity.",
     paymentCash: "Payment in cash.",
-    noShowPolicy: "If you do not show up for your appointment and do not notify us at least 24 hours in advance, you are obligated to pay for the service in full.",
+    noShowPolicy: "Please note:\n\nThe time reserved for you is specially planned and prepared. If you are unable to come at the agreed time, please let us know at least 24 hours in advance.\n\nTimely cancellation allows us to offer the time to other clients. In case of no-show or late cancellation, a fee of 50% of the service price may apply.\n\nDuring treatments we may not always be able to answer the phone. We will get back to you as soon as possible.",
     followFacebook: "Follow us on Facebook",
     bookNow: "Book now",
 
@@ -300,7 +300,7 @@ export const translations = {
     bookingCall: "Для записи выберите удобное время или позвоните:",
     bookingBusy: "Если мы заняты приёмом, мы перезвоним вам при первой возможности.",
     paymentCash: "Оплата наличными.",
-    noShowPolicy: "В случае неявки на приём без уведомления не менее чем за 24 часа, клиент обязан оплатить услугу в полном объёме.",
+    noShowPolicy: "Просим учитывать:\n\nЗабронированное для Вас время специально спланировано и подготовлено. Если Вы не можете прийти в назначенное время, просим сообщить об этом не менее чем за 24 часа.\n\nСвоевременная отмена позволяет предложить это время другим клиентам. В случае неявки без предупреждения или поздней отмены может применяться плата в размере 50% от стоимости услуги.\n\nВо время процедур мы не всегда можем ответить на телефонный звонок. Мы свяжемся с Вами при первой возможности.",
     followFacebook: "Следите за нами в Facebook",
     bookNow: "Записаться",
 
@@ -421,7 +421,7 @@ export const translations = {
     bookingCall: "Varataksesi ajan valitse sopiva aika tai soita:",
     bookingBusy: "Jos olemme varattuja, soitamme sinulle takaisin heti kun mahdollista.",
     paymentCash: "Maksu käteisellä.",
-    noShowPolicy: "Jos et saavu varatulle ajalle etkä ilmoita siitä vähintään 24 tuntia etukäteen, olet velvollinen maksamaan palvelun täysimääräisesti.",
+    noShowPolicy: "Huomioittehan:\n\nTeille varattu aika on erityisesti suunniteltu ja valmisteltu. Jos ette pääse sovittuna aikana, pyydämme ilmoittamaan siitä vähintään 24 tuntia etukäteen.\n\nAjoissa tehty peruutus mahdollistaa ajan tarjoamisen muille asiakkaille. Ilmoittamatta jättämisestä tai myöhäisestä peruutuksesta voidaan periä 50 % palvelun hinnasta.\n\nHoitojen aikana emme aina pysty vastaamaan puhelimeen. Otamme Teihin yhteyttä mahdollisimman pian.",
     followFacebook: "Seuraa meitä Facebookissa",
     bookNow: "Varaa aika",
 

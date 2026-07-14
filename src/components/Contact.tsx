@@ -92,7 +92,7 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto mt-16 text-center">
           <div className="border-t border-border pt-8 text-base md:text-lg text-muted-foreground">
-            <p>{t("noShowPolicy")}</p>
+            <p className="whitespace-pre-line">{t("noShowPolicy")}</p>
           </div>
           <div className="mt-10 pt-8 border-t border-border">
             <a
