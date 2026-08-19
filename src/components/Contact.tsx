@@ -68,9 +68,10 @@ const Contact = () => {
         elementOrSelector: widgetRef.current,
         calLink: CAL_LINK,
         layout: "month_view",
-        config: { layout: "month_view" },
+        config: { layout: "month_view", theme: "light" },
       });
       window.Cal("ui", {
+        theme: "light",
         hideEventTypeDetails: false,
         layout: "month_view",
         cssVarsPerTheme: { light: { "cal-brand": "#02acbd" } },
