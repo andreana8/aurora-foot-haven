@@ -1,56 +1,84 @@
 import { useEffect, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const CALENDLY_URL = "https://calendly.com/jalahoolduskabinet";
-const CALENDLY_SCRIPT = "https://assets.calendly.com/assets/external/widget.js";
-const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
+const CAL_LINK = "jalahooldus-kogu-perele";
+const CAL_SCRIPT = "https://app.cal.com/embed/embed.js";
 
 declare global {
   interface Window {
-    Calendly?: {
-      initInlineWidget: (opts: { url: string; parentElement: HTMLElement }) => void;
-    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    Cal?: any;
   }
 }
+
+const loadCal = () =>
+  new Promise<void>((resolve) => {
+    if (window.Cal) return resolve();
+    // Official Cal.com embed loader snippet
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (function (C: any, A: string, L: string) {
+      const p = (a: any, ar: any) => {
+        a.q.push(ar);
+      };
+      const d = C.document;
+      C.Cal =
+        C.Cal ||
+        function (...args: any[]) {
+          const cal = C.Cal;
+          if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            const s = d.createElement("script");
+            s.src = A;
+            s.async = true;
+            s.onload = () => resolve();
+            d.head.appendChild(s);
+            cal.loaded = true;
+          }
+          if (args[0] === L) {
+            const api: any = function (...a: any[]) {
+              p(api, a);
+            };
+            const namespace = args[1];
+            api.q = api.q || [];
+            if (typeof namespace === "string") {
+              cal.ns[namespace] = cal.ns[namespace] || api;
+              p(cal.ns[namespace], args);
+              p(cal, ["initNamespace", namespace]);
+            } else p(cal, args);
+            return;
+          }
+          p(cal, args);
+        };
+    })(window, CAL_SCRIPT, "init");
+
+    window.Cal("init", { origin: "https://app.cal.com" });
+    if (window.Cal?.loaded) setTimeout(() => resolve(), 0);
+  });
 
 const Contact = () => {
   const { t } = useLanguage();
   const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Ensure stylesheet is present
-    if (!document.querySelector(`link[href="${CALENDLY_CSS}"]`)) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = CALENDLY_CSS;
-      document.head.appendChild(link);
-    }
-
-    const init = () => {
-      if (!widgetRef.current || !window.Calendly) return;
-      widgetRef.current.innerHTML = "";
-      window.Calendly.initInlineWidget({
-        url: `${CALENDLY_URL}?hide_gdpr_banner=1`,
-        parentElement: widgetRef.current,
+    let cancelled = false;
+    loadCal().then(() => {
+      if (cancelled || !widgetRef.current) return;
+      window.Cal("inline", {
+        elementOrSelector: widgetRef.current,
+        calLink: CAL_LINK,
+        layout: "month_view",
+        config: { layout: "month_view" },
       });
+      window.Cal("ui", {
+        hideEventTypeDetails: false,
+        layout: "month_view",
+        cssVarsPerTheme: { light: { "cal-brand": "#02acbd" } },
+      });
+    });
+    return () => {
+      cancelled = true;
     };
-
-    if (window.Calendly) {
-      init();
-      return;
-    }
-
-    let script = document.querySelector<HTMLScriptElement>(
-      `script[src="${CALENDLY_SCRIPT}"]`
-    );
-    if (!script) {
-      script = document.createElement("script");
-      script.src = CALENDLY_SCRIPT;
-      script.async = true;
-      document.body.appendChild(script);
-    }
-    script.addEventListener("load", init);
-    return () => script?.removeEventListener("load", init);
   }, []);
 
   return (
@@ -67,6 +95,7 @@ const Contact = () => {
           <div>
             <div
               ref={widgetRef}
+              className="w-full overflow-auto rounded-lg"
               style={{ minWidth: "280px", height: "650px" }}
             />
           </div>
