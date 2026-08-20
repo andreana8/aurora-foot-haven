@@ -31,6 +31,8 @@ const Nouanded = () => {
         path="/nouanded"
       />
       <Header />
+      <main className="pt-28 pb-20">
+
 
         <div className="container mx-auto px-4 max-w-3xl">
           <Link
