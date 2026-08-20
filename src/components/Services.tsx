@@ -65,7 +65,7 @@ const Services = () => {
                 index < 3 ? "md:col-span-2" : "md:col-span-2"
               } ${index === 3 ? "md:col-start-2" : ""}`}
             >
-              <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-3 mb-3">
+              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-2 lg:gap-3 mb-3">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-sm lg:text-lg font-extrabold">
                   {card.title}
                 </h3>
