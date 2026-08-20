@@ -1,4 +1,4 @@
-import treatmentImg from "@/assets/jalahooldus-kogu-perele.jpg";
+import heroAsset from "@/assets/jalahooldus-kogu-perele-hero.png.asset.json";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
