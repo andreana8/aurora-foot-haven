@@ -57,9 +57,14 @@ const Services = () => {
         </div>
 
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-6 gap-6">
           {serviceCards.map((card, index) => (
-            <div key={card.title} className="bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md">
+            <div
+              key={card.title}
+              className={`bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md ${
+                index < 3 ? "md:col-span-2" : "md:col-span-2"
+              } ${index === 3 ? "md:col-start-2" : ""}`}
+            >
               <div className="flex items-start justify-between gap-3 mb-3">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-lg font-extrabold">
                   {card.title}
@@ -81,11 +86,8 @@ const Services = () => {
               >
                 {t("bookNow")}
               </button>
-
             </div>
-
           ))}
-
         </div>
 
         <div className="mt-12 text-center">
