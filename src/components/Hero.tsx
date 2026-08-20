@@ -22,7 +22,9 @@ const Hero = () => {
 
   return (
     <section id="top" className="relative h-screen flex flex-col">
+      <h1 className="sr-only">Jalahooldus Kogu Perele – professionaalne jalahooldus Tallinnas</h1>
       {/* Full-bleed background image */}
+
       <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
         <img
           src={heroAsset.url}
