@@ -124,8 +124,8 @@ const Contact = () => {
           <div>
             <div
               ref={widgetRef}
-              className="w-full overflow-auto rounded-lg"
-              style={{ minWidth: "280px", height: "650px" }}
+              className="w-full overflow-auto rounded-lg h-[760px] sm:h-[700px] lg:h-[650px]"
+              style={{ minWidth: "280px" }}
             />
           </div>
 

@@ -57,13 +57,13 @@ const Services = () => {
         </div>
 
 
-        <div className="grid md:grid-cols-6 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
           {serviceCards.map((card, index) => (
             <div
               key={card.title}
-              className={`bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md ${
-                index < 3 ? "md:col-span-2" : "md:col-span-2"
-              } ${index === 3 ? "md:col-start-2" : ""}`}
+              className={`bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md lg:col-span-2 ${
+                index === 3 ? "lg:col-start-2" : ""
+              } ${index === serviceCards.length - 1 && serviceCards.length % 2 === 1 ? "md:col-span-2 lg:col-span-2" : ""}`}
             >
               <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-2 lg:gap-3 mb-3">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-sm lg:text-lg font-extrabold">
