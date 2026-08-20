@@ -1,4 +1,4 @@
-import treatmentImg from "@/assets/jalahooldus-kogu-perele.jpg";
+import heroAsset from "@/assets/jalahooldus-kogu-perele-hero.png.asset.json";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Full-bleed background image */}
       <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
         <img
-          src={treatmentImg}
+          src={heroAsset.url}
           alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
           className="w-full h-full object-cover object-[65%_30%] sm:object-center"
           width={1920}
