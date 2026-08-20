@@ -44,7 +44,15 @@ const Location = () => {
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
           <div className="overflow-hidden">
-            <img src={buildingImg} alt={t("buildingImgAlt")} className="w-full h-auto object-cover" />
+            <img
+              src={buildingImg}
+              alt={t("buildingImgAlt")}
+              className="w-full h-auto object-cover"
+              width={1200}
+              height={800}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="overflow-hidden">
             <iframe
