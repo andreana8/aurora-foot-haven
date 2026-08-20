@@ -1,4 +1,6 @@
-import heroImage from "@/assets/jalahooldus-kogu-perele-hero.jpg";
+import heroDesktop from "@/assets/hero-desktop.webp";
+import heroTablet from "@/assets/hero-tablet.webp";
+import heroMobile from "@/assets/hero-mobile.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
@@ -27,8 +29,10 @@ const Hero = () => {
 
       <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
         <picture>
+          <source media="(max-width: 640px)" srcSet={heroMobile} />
+          <source media="(max-width: 1024px)" srcSet={heroTablet} />
           <img
-            src={heroImage}
+            src={heroDesktop}
             alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
             className="w-full h-full object-cover object-center"
             width={1920}
