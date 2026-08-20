@@ -28,17 +28,22 @@ const Hero = () => {
       {/* Full-bleed background image */}
 
       <div className="absolute inset-0 animate-fade-in" style={{ animationDuration: "3s" }}>
-        <img
-          src={heroAsset.url}
-          alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
-          className="w-full h-full object-cover object-[65%_30%] sm:object-center"
-          width={1920}
-          height={1080}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-        />
+        <picture>
+          <source media="(max-width: 640px)" srcSet={heroMobileAsset.url} />
+          <source media="(max-width: 1024px)" srcSet={heroTabletAsset.url} />
+          <img
+            src={heroAsset.url}
+            alt="jalahooldus-kogu-perele-aurora-medica-jalahooldus-tallinnas-jalgade-hooldus"
+            className="w-full h-full object-cover object-center"
+            width={1920}
+            height={1080}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
       </div>
+
 
       {/* Nav buttons near the bottom */}
       <div className="relative z-10 flex-1 flex items-end justify-center pb-10 sm:pb-20 px-4">
