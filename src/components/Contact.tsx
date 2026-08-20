@@ -62,25 +62,53 @@ const Contact = () => {
 
   useEffect(() => {
     let cancelled = false;
-    loadCal().then(() => {
-      if (cancelled || !widgetRef.current) return;
-      window.Cal("inline", {
-        elementOrSelector: widgetRef.current,
-        calLink: CAL_LINK,
-        layout: "month_view",
-        config: { layout: "month_view", theme: "light" },
+    const el = widgetRef.current;
+    if (!el) return;
+
+    const init = () => {
+      loadCal().then(() => {
+        if (cancelled || !widgetRef.current) return;
+        window.Cal("inline", {
+          elementOrSelector: widgetRef.current,
+          calLink: CAL_LINK,
+          layout: "month_view",
+          config: { layout: "month_view", theme: "light" },
+        });
+        window.Cal("ui", {
+          theme: "light",
+          hideEventTypeDetails: false,
+          layout: "month_view",
+          cssVarsPerTheme: { light: { "cal-brand": "#02acbd" } },
+        });
       });
-      window.Cal("ui", {
-        theme: "light",
-        hideEventTypeDetails: false,
-        layout: "month_view",
-        cssVarsPerTheme: { light: { "cal-brand": "#02acbd" } },
-      });
-    });
+    };
+
+    // Load the third-party widget only when the booking section comes close to
+    // the viewport, so it never blocks the initial page load.
+    if (typeof IntersectionObserver === "undefined") {
+      init();
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          observer.disconnect();
+          init();
+        }
+      },
+      { rootMargin: "600px" },
+    );
+    observer.observe(el);
+
     return () => {
       cancelled = true;
+      observer.disconnect();
     };
   }, []);
+
 
   return (
     <section id="kontakt" className="min-h-screen py-16 md:py-24 bg-background flex items-center">
