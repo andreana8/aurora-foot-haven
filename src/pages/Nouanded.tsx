@@ -25,8 +25,13 @@ const Nouanded = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Seo
+        title="Nõuanded tervete jalgade heaks | Jalahooldus Kogu Perele"
+        description="Praktilised nõuanded, kuidas hoida jalad terved, ennetada probleeme ja hoolitseda igapäevaselt oma jalgade eest."
+        path="/nouanded"
+      />
       <Header />
-      <main className="pt-28 pb-20">
+
         <div className="container mx-auto px-4 max-w-3xl">
           <Link
             to="/"
