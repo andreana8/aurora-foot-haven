@@ -30,6 +30,9 @@ const Hero = () => {
           className="w-full h-full object-cover object-[65%_30%] sm:object-center"
           width={1920}
           height={1080}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 

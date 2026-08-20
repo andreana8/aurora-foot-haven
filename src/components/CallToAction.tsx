@@ -27,6 +27,10 @@ const CallToAction = () => {
             src={ctaImage}
             alt="Professionaalne jalahooldus"
             className="w-full h-auto rounded-2xl object-cover max-h-[300px] md:max-h-[400px]"
+            width={1200}
+            height={800}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
