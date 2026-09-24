@@ -163,7 +163,7 @@ export const translations = {
     service5Desc: "The price depends on the condition of the feet and the amount of work. Intended for clients with calluses, corns, cracked heels, thickened or deformed nails, fungal nail damage or other foot problems. The goal is to relieve discomfort, improve the condition of the feet and support foot and nail health.",
     service6Title: "Professional foot care with home visits in Tallinn",
     service6Price: "80 €",
-    service6Desc: "Outside Tallinn, a transport fee is added if necessary, depending on the distance and mutual agreement.",
+    service6Desc: "OUTSIDE TALLINN, A TRANSPORT FEE IS ADDED DEPENDING ON THE DISTANCE AND MUTUAL AGREEMENT.",
     clinicImgAlt: "Our office",
     certImgAlt: "Certificate",
 
@@ -287,7 +287,7 @@ export const translations = {
     service5Desc: "Цена зависит от состояния ног и объёма работы. Предназначен для клиентов с утолщениями кожи, мозолями, потрескавшимися пятками, утолщёнными или деформированными ногтями, грибковыми поражениями ногтей или другими проблемами. Цель — облегчить дискомфорт, улучшить состояние и поддержать здоровье ног и ногтей.",
     service6Title: "Профессиональный уход за ногами с выездом в Таллинне",
     service6Price: "80 €",
-    service6Desc: "За пределами Таллинна при необходимости добавляется транспортная надбавка в зависимости от расстояния и договорённости.",
+    service6Desc: "ЗА ПРЕДЕЛАМИ ТАЛЛИННА ДОБАВЛЯЕТСЯ ТРАНСПОРТНАЯ НАДБАВКА В ЗАВИСИМОСТИ ОТ РАССТОЯНИЯ И ДОГОВОРЁННОСТИ.",
     clinicImgAlt: "Наш кабинет",
     certImgAlt: "Сертификат",
 
@@ -411,7 +411,7 @@ export const translations = {
     service5Desc: "Hinta riippuu jalkojen kunnosta ja työn määrästä. Tarkoitettu asiakkaille, joilla on kovettumia, känsiä, halkeilleita kantapäitä, paksuuntuneita tai epämuodostuneita kynsiä, sienivaurioita kynsissä tai muita jalkaongelmia. Tavoitteena on lievittää vaivoja, parantaa jalkojen kuntoa sekä tukea jalkojen ja kynsien terveyttä.",
     service6Title: "Ammattimainen jalkojenhoitopalvelu kotikäynnillä Tallinnassa",
     service6Price: "80 €",
-    service6Desc: "Tallinnan ulkopuolella lisätään tarvittaessa kuljetusmaksu matkan pituuden ja sopimuksen mukaan.",
+    service6Desc: "TALLINNAN ULOKOPUOLELLA LISÄTÄÄN KULJETUSMAKSU MATKAN PITUUDEN JA SOPIMUKSEN MUKAAN.",
     clinicImgAlt: "Vastaanottomme",
     certImgAlt: "Sertifikaatti",
 
