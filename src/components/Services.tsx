@@ -26,6 +26,7 @@ const Services = () => {
     { title: t("service3Title"), price: t("service3Price"), description: t("service3Desc") },
     { title: t("service4Title"), price: t("service4Price"), description: t("service4Desc") },
     { title: t("service5Title"), price: t("service5Price"), description: t("service5Desc") },
+    { title: t("service6Title"), price: t("service6Price"), description: t("service6Desc") },
   ];
 
   return (
@@ -62,8 +63,8 @@ const Services = () => {
             <div
               key={card.title}
               className={`bg-muted p-5 md:p-6 flex flex-col hover:shadow-lg transition-shadow rounded-md lg:col-span-2 ${
-                index === 3 ? "lg:col-start-2" : ""
-              } ${index === serviceCards.length - 1 && serviceCards.length % 2 === 1 ? "md:col-span-2 lg:col-span-2" : ""}`}
+                index === serviceCards.length - 1 && serviceCards.length % 2 === 1 ? "md:col-span-2 lg:col-span-2" : ""
+              }`}
             >
               <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-2 lg:gap-3 mb-3">
                 <h3 className="uppercase tracking-wider text-foreground font-sans text-base md:text-sm lg:text-lg font-extrabold">
