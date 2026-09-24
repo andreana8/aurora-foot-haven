@@ -129,7 +129,15 @@ const Nouanded = () => {
             <p className="opacity-90">{c.reminderText}</p>
           </section>
 
-          <p className="text-lg text-center font-medium">{c.closing}</p>
+          <div className="text-center">
+            <p className="inline-block text-left text-lg font-medium">
+              {c.closing.split("\n").map((line, i) => (
+                <span key={i} className="block">
+                  {line.replace(/\u00a0+$/, "")}
+                </span>
+              ))}
+            </p>
+          </div>
         </div>
       </main>
       <Footer />
