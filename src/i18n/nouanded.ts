@@ -51,7 +51,7 @@ const et: AdviceContent = {
         {
           paragraphs: [
             "Kuiv nahk vajab regulaarset niisutamist. Kõige parem on kreemitada jalgu kohe pärast pesemist, kui nahk on veel kergelt niiske.",
-            "Kuiva naha hoolduses võivad sobida näiteks kreemid, mis sisaldavad: 5–10% uureat, glütseriini, mesilasvaha, sheavõid, pantenooli või keramiide.",
+            "Kuiva naha hoolduses võivad sobida näiteks kreemid, mis sisaldavad: 5-10% uureat, glütseriini, mesilasvaha, sheavõid, pantenooli või keramiide.",
             "Kreemi võib kasutada üks kuni kaks korda päevas vastavalt naha seisundile. Väga kuiva naha korral võib õhtul kanda jalgadele paksema kreemikihi ja panna jalga puuvillased sokid. Kuiva naha hooldusjuhendis soovitatakse samuti vältida kuuma vett, naha tugevat hõõrumist ning valida mugavad ja hingavad jalanõud.",
             "Kreemi ei panda varbavahedesse, eriti kui need kipuvad olema niisked.",
           ],
