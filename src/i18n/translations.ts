@@ -31,7 +31,7 @@ export const translations = {
     service5Desc: "Hoolduse hind sõltub jalgade seisukorrast ja töö mahust. Mõeldud klientidele, kellel esineb paksendid, konnasilmad, lõhenenud kannad, paksenenud või deformeerunud küüned, seenkahjustusega küüned või muud jalaprobleemid. Eesmärk on leevendada vaevusi, parandada jalgade seisukorda ning toetada jalgade ja küünte tervist.",
     service6Title: "Väljasõiduga professionaalne jalahooldusteenus Tallinnas",
     service6Price: "80 €",
-    service6Desc: "Väljaspool Tallinna lisandub vajadusel transporditasu vastavalt vahemaale ja kokkuleppele.",
+    service6Desc: "VÄLJASPOOL TALLINNA LISANDUB TRANSPORDITASU VASTAVALT VAHEMAALE JA KOKKULEPPELE.",
     clinicImgAlt: "Meie kabinet",
     certImgAlt: "Sertifikaat",
 
