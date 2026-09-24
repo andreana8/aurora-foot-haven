@@ -31,7 +31,7 @@ export const translations = {
     service5Desc: "Hoolduse hind sõltub jalgade seisukorrast ja töö mahust. Mõeldud klientidele, kellel esineb paksendid, konnasilmad, lõhenenud kannad, paksenenud või deformeerunud küüned, seenkahjustusega küüned või muud jalaprobleemid. Eesmärk on leevendada vaevusi, parandada jalgade seisukorda ning toetada jalgade ja küünte tervist.",
     service6Title: "Väljasõiduga professionaalne jalahooldusteenus Tallinnas",
     service6Price: "80 €",
-    service6Desc: "PROFESSIONAALNE JALAHOOLDUS KA TEIE KODU JUURES TALLINNAS. VÄLJASPOOL TALLINNA LISANDUB VAJADUSEL TRANSPORDITASU VASTAVALT VAHEMAALE JA KOKKULEPPELE.",
+    service6Desc: "Väljaspool Tallinna lisandub vajadusel transporditasu vastavalt vahemaale ja kokkuleppele.",
     clinicImgAlt: "Meie kabinet",
     certImgAlt: "Sertifikaat",
 
@@ -163,7 +163,7 @@ export const translations = {
     service5Desc: "The price depends on the condition of the feet and the amount of work. Intended for clients with calluses, corns, cracked heels, thickened or deformed nails, fungal nail damage or other foot problems. The goal is to relieve discomfort, improve the condition of the feet and support foot and nail health.",
     service6Title: "Professional foot care with home visits in Tallinn",
     service6Price: "80 €",
-    service6Desc: "Professional foot care, also in the comfort of your home in Tallinn. Outside Tallinn, a transport fee is added if necessary, depending on the distance and mutual agreement.",
+    service6Desc: "Outside Tallinn, a transport fee is added if necessary, depending on the distance and mutual agreement.",
     clinicImgAlt: "Our office",
     certImgAlt: "Certificate",
 
@@ -287,7 +287,7 @@ export const translations = {
     service5Desc: "Цена зависит от состояния ног и объёма работы. Предназначен для клиентов с утолщениями кожи, мозолями, потрескавшимися пятками, утолщёнными или деформированными ногтями, грибковыми поражениями ногтей или другими проблемами. Цель — облегчить дискомфорт, улучшить состояние и поддержать здоровье ног и ногтей.",
     service6Title: "Профессиональный уход за ногами с выездом в Таллинне",
     service6Price: "80 €",
-    service6Desc: "Профессиональный уход за ногами также на дому, в Таллинне. За пределами Таллинна при необходимости добавляется транспортная надбавка в зависимости от расстояния и договорённости.",
+    service6Desc: "За пределами Таллинна при необходимости добавляется транспортная надбавка в зависимости от расстояния и договорённости.",
     clinicImgAlt: "Наш кабинет",
     certImgAlt: "Сертификат",
 
@@ -411,7 +411,7 @@ export const translations = {
     service5Desc: "Hinta riippuu jalkojen kunnosta ja työn määrästä. Tarkoitettu asiakkaille, joilla on kovettumia, känsiä, halkeilleita kantapäitä, paksuuntuneita tai epämuodostuneita kynsiä, sienivaurioita kynsissä tai muita jalkaongelmia. Tavoitteena on lievittää vaivoja, parantaa jalkojen kuntoa sekä tukea jalkojen ja kynsien terveyttä.",
     service6Title: "Ammattimainen jalkojenhoitopalvelu kotikäynnillä Tallinnassa",
     service6Price: "80 €",
-    service6Desc: "Ammattimainen jalkojen hoito myös kotiinonne Tallinnassa. Tallinnan ulkopuolella lisätään tarvittaessa kuljetusmaksu matkan pituuden ja sopimuksen mukaan.",
+    service6Desc: "Tallinnan ulkopuolella lisätään tarvittaessa kuljetusmaksu matkan pituuden ja sopimuksen mukaan.",
     clinicImgAlt: "Vastaanottomme",
     certImgAlt: "Sertifikaatti",
 
