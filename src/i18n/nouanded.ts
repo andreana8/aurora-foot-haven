@@ -207,7 +207,7 @@ const et: AdviceContent = {
   reminderTitle: "Väike meelespea tervete jalgade heaks",
   reminderFormula: "Pese - kuivata - kreemita - kontrolli - vali õiged jalanõud.",
   reminderText: "Need viis lihtsat harjumust aitavad hoida jalad heas seisukorras aastaringselt.",
-  closing: "Terved jalad toetavad kogu keha heaolu.\u00a0\nKui Sul on jalgade või küüntega mure, ära jää sellega üksi - küsi nõu jalaspetsialistilt.",
+  closing: "Terved jalad toetavad kogu keha heaolu.\u00a0\u00a0\nKui Sul on jalgade või küüntega mure, ära jää sellega üksi - küsi nõu jalaspetsialistilt.",
 };
 
 const en: AdviceContent = {
