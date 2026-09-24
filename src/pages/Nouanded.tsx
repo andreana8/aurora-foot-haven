@@ -4,7 +4,14 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import Seo from "@/components/Seo";
 import { useLanguage } from "@/contexts/LanguageContext";
-
+import { nouandedContent } from "@/i18n/nouanded";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { AlertCircle, Footprints } from "lucide-react";
 
 const Bullet = ({ children }: { children: React.ReactNode }) => (
   <li className="flex items-start gap-3 text-muted-foreground">
@@ -13,15 +20,9 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
   </li>
 );
 
-const HtmlBullet = ({ html }: { html: string }) => (
-  <li className="flex items-start gap-3 text-muted-foreground">
-    <span className="w-2 h-2 rounded-full bg-secondary flex-shrink-0 mt-2" />
-    <span dangerouslySetInnerHTML={{ __html: html }} />
-  </li>
-);
-
 const Nouanded = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const c = nouandedContent[language];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -32,118 +33,103 @@ const Nouanded = () => {
       />
       <Header />
       <main className="pt-28 pb-20">
-
-
         <div className="container mx-auto px-4 max-w-3xl">
           <Link
             to="/"
             className="inline-flex items-center gap-2 text-primary hover:underline mb-8 font-medium"
           >
-            {t("nouandedBack")}
+            {c.back}
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {t("nouandedTitle")}
-          </h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            {t("nouandedSubtitle")}
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{c.title}</h1>
+          <p className="text-lg text-muted-foreground mb-4">{c.intro1}</p>
+          <p className="text-lg text-muted-foreground mb-4">{c.intro2}</p>
+          <p className="text-lg font-medium mb-12">{c.intro3}</p>
 
-          {/* Sissekasvanud varbaküüs */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 text-primary">
-              {t("ingrownTitle")}
-            </h2>
-            <p className="text-muted-foreground mb-6" dangerouslySetInnerHTML={{ __html: t("ingrownIntro") }} />
-            <ul className="space-y-3 mb-6">
-              <HtmlBullet html={t("ingrownCause1")} />
-              <HtmlBullet html={t("ingrownCause2")} />
-              <HtmlBullet html={t("ingrownCause3")} />
-              <HtmlBullet html={t("ingrownCause4")} />
-              <HtmlBullet html={t("ingrownCause5")} />
-              <HtmlBullet html={t("ingrownCause6")} />
-            </ul>
+          {/* Igapäevane hooldus */}
+          <section className="mb-12 rounded-2xl border border-border bg-card p-6 md:p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                <Footprints className="w-5 h-5" />
+              </span>
+              <h2 className="text-2xl font-bold">{c.dailyTitle}</h2>
+            </div>
+            <div className="space-y-4">
+              {c.dailyParagraphs.map((p, i) => (
+                <p key={i} className="text-muted-foreground leading-relaxed">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </section>
 
-            <h3 className="text-xl font-bold mb-3">{t("ingrownSymptomsTitle")}</h3>
+          {/* Teemakaardid */}
+          <Accordion type="single" collapsible className="space-y-4 mb-12">
+            {c.topics.map((topic, i) => (
+              <AccordionItem
+                key={i}
+                value={`topic-${i}`}
+                className="rounded-2xl border border-border bg-card px-6 shadow-sm"
+              >
+                <AccordionTrigger className="text-left text-lg font-bold hover:no-underline py-5">
+                  {topic.title}
+                </AccordionTrigger>
+                <AccordionContent className="pb-6">
+                  {topic.sections.map((section, j) => (
+                    <div key={j} className={j > 0 ? "mt-5" : ""}>
+                      {section.paragraphs?.map((p, k) => (
+                        <p
+                          key={k}
+                          className="text-muted-foreground leading-relaxed mb-3"
+                        >
+                          {p}
+                        </p>
+                      ))}
+                      {section.listTitle && (
+                        <p className="font-semibold mb-3">{section.listTitle}</p>
+                      )}
+                      {section.list && (
+                        <ul className="space-y-2 mb-3">
+                          {section.list.map((item, k) => (
+                            <Bullet key={k}>{item}</Bullet>
+                          ))}
+                        </ul>
+                      )}
+                      {section.note && (
+                        <div className="flex items-start gap-3 rounded-xl bg-secondary/10 border border-secondary/30 p-4 mt-4">
+                          <AlertCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                          <p className="text-sm font-medium leading-relaxed">
+                            {section.note}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+
+          {/* Millal pöörduda */}
+          <section className="mb-12 rounded-2xl border border-border bg-card p-6 md:p-8 shadow-sm">
+            <h2 className="text-2xl font-bold mb-4">{c.whenTitle}</h2>
+            <p className="text-muted-foreground mb-4">{c.whenIntro}</p>
             <ul className="space-y-2 mb-6">
-              <Bullet>{t("ingrownSymptom1")}</Bullet>
-              <Bullet>{t("ingrownSymptom2")}</Bullet>
-              <Bullet>{t("ingrownSymptom3")}</Bullet>
-              <Bullet>{t("ingrownSymptom4")}</Bullet>
-              <Bullet>{t("ingrownSymptom5")}</Bullet>
+              {c.whenList.map((item, i) => (
+                <Bullet key={i}>{item}</Bullet>
+              ))}
             </ul>
-
-            <h3 className="text-xl font-bold mb-3">{t("ingrownPreventTitle")}</h3>
-            <p className="text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: t("ingrownPrevent1") }} />
-            <p className="text-muted-foreground mb-2" dangerouslySetInnerHTML={{ __html: t("ingrownPrevent2") }} />
-            <p className="text-muted-foreground mb-6" dangerouslySetInnerHTML={{ __html: t("ingrownPrevent3") }} />
-
-            <h3 className="text-xl font-bold mb-3">{t("ingrownWhenTitle")}</h3>
-            <p className="text-muted-foreground">{t("ingrownWhen1")}</p>
-            <p className="text-muted-foreground mt-4">{t("ingrownWhen2")}</p>
+            <p className="font-medium">{c.whenNote}</p>
           </section>
 
-          <hr className="border-border mb-12" />
-
-          {/* Kannalõhed */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 text-primary">
-              {t("heelTitle")}
-            </h2>
-            <p className="text-muted-foreground mb-4">{t("heelIntro1")}</p>
-            <p className="text-muted-foreground mb-4">{t("heelIntro2")}</p>
-            <p className="text-muted-foreground mb-6">{t("heelIntro3")}</p>
-
-            <h3 className="text-xl font-bold mb-3">{t("heelNutritionTitle")}</h3>
-            <p className="text-muted-foreground mb-6">{t("heelNutrition")}</p>
-
-            <h3 className="text-xl font-bold mb-3">{t("heelRemedyTitle")}</h3>
-            <p className="text-muted-foreground mb-4">{t("heelRemedy1")}</p>
-            <p className="text-muted-foreground mb-6">{t("heelRemedy2")}</p>
-
-            <h3 className="text-xl font-bold mb-3">{t("heelWhenTitle")}</h3>
-            <p className="text-muted-foreground">{t("heelWhen")}</p>
+          {/* Meelespea */}
+          <section className="mb-12 rounded-2xl bg-primary text-primary-foreground p-6 md:p-8 text-center shadow-md">
+            <h2 className="text-2xl font-bold mb-4">{c.reminderTitle}</h2>
+            <p className="text-xl font-bold mb-3">{c.reminderFormula}</p>
+            <p className="opacity-90">{c.reminderText}</p>
           </section>
 
-          <hr className="border-border mb-12" />
-
-          {/* Jalaseen */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 text-primary">
-              {t("fungusTitle")}
-            </h2>
-
-            <h3 className="text-xl font-bold mb-3">{t("fungusCausesTitle")}</h3>
-            <p className="text-muted-foreground mb-6">{t("fungusCausesIntro")}</p>
-            <ul className="space-y-3 mb-6">
-              <HtmlBullet html={t("fungusCause1")} />
-              <HtmlBullet html={t("fungusCause2")} />
-              <HtmlBullet html={t("fungusCause3")} />
-              <HtmlBullet html={t("fungusCause4")} />
-            </ul>
-
-            <h3 className="text-xl font-bold mb-3">{t("fungusSymTitle")}</h3>
-            <ul className="space-y-2 mb-6">
-              <Bullet>{t("fungusSym1")}</Bullet>
-              <Bullet>{t("fungusSym2")}</Bullet>
-              <Bullet>{t("fungusSym3")}</Bullet>
-              <Bullet>{t("fungusSym4")}</Bullet>
-            </ul>
-
-            <h3 className="text-xl font-bold mb-3">{t("fungusPreventTitle")}</h3>
-            <p className="text-muted-foreground mb-6">{t("fungusPrevent")}</p>
-
-            <h3 className="text-xl font-bold mb-3">{t("fungusRemedyTitle")}</h3>
-            <p className="text-muted-foreground mb-4">{t("fungusRemedyIntro")}</p>
-            <ul className="space-y-3 mb-6">
-              <HtmlBullet html={t("fungusRemedy1")} />
-              <HtmlBullet html={t("fungusRemedy2")} />
-              <HtmlBullet html={t("fungusRemedy3")} />
-            </ul>
-
-            <h3 className="text-xl font-bold mb-3">{t("fungusWhenTitle")}</h3>
-            <p className="text-muted-foreground">{t("fungusWhen")}</p>
-          </section>
+          <p className="text-lg text-center font-medium">{c.closing}</p>
         </div>
       </main>
       <Footer />
