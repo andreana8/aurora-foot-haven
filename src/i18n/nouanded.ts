@@ -205,9 +205,9 @@ const et: AdviceContent = {
   ],
   whenNote: "Probleemi ei pea ootama väga suureks. Õigel ajal märgatud muutust on sageli lihtsam käsitleda.",
   reminderTitle: "Väike meelespea tervete jalgade heaks",
-  reminderFormula: "Pese – kuivata – kreemita – kontrolli – vali õiged jalanõud.",
+  reminderFormula: "Pese - kuivata - kreemita - kontrolli - vali õiged jalanõud.",
   reminderText: "Need viis lihtsat harjumust aitavad hoida jalad heas seisukorras aastaringselt.",
-  closing: "Terved jalad toetavad kogu keha heaolu. Kui Sul on jalgade või küüntega mure, ära jää sellega üksi – küsi nõu jalaspetsialistilt.",
+  closing: "Terved jalad toetavad kogu keha heaolu.\u00a0\nKui Sul on jalgade või küüntega mure, ära jää sellega üksi - küsi nõu jalaspetsialistilt.",
 };
 
 const en: AdviceContent = {
