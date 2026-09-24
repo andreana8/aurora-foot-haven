@@ -74,7 +74,7 @@ const Nouanded = () => {
                 <AccordionTrigger className="text-left text-lg font-bold hover:no-underline py-5">
                   {topic.title}
                 </AccordionTrigger>
-                <AccordionContent className="pb-6">
+                <AccordionContent className="pb-6 text-base">
                   {topic.sections.map((section, j) => (
                     <div key={j} className={j > 0 ? "mt-5" : ""}>
                       {section.paragraphs?.map((p, k) => (

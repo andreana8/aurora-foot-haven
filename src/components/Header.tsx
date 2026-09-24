@@ -6,8 +6,8 @@ const Header = () => {
   const langs: { code: "et" | "en" | "ru" | "fi"; label: string; short: string }[] = [
     { code: "et", label: "Eesti", short: "ET" },
     { code: "en", label: "English", short: "EN" },
-    { code: "ru", label: "Русский", short: "RU" },
     { code: "fi", label: "Suomi", short: "FI" },
+    { code: "ru", label: "Русский", short: "RU" },
   ];
 
   return (
