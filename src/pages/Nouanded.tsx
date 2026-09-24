@@ -130,7 +130,7 @@ const Nouanded = () => {
           </section>
 
           <div className="text-center">
-            <p className="inline-block text-left text-lg font-medium">
+            <p className="text-lg font-medium">
               {c.closing.split("\n").map((line, i) => (
                 <span key={i} className="block">
                   {line.replace(/\u00a0+$/, "")}
