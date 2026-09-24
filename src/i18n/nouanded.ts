@@ -77,7 +77,7 @@ const et: AdviceContent = {
         },
         {
           paragraphs: [
-            "Materjalides soovitatakse igapäevaseks hoolduseks ligikaudu 5–10% uureaga kreemi ning sügavamate lõhede puhul tugevama uureasisaldusega toodet.",
+            "Materjalides soovitatakse igapäevaseks hoolduseks ligikaudu 5-10% uureaga kreemi ning sügavamate lõhede puhul tugevama uureasisaldusega toodet.",
           ],
           note: "Kui kannalõhed on sügavad, valulikud, veritsevad või põletikulised, tuleks pöörduda jalaspetsialisti või arsti poole.",
         },
